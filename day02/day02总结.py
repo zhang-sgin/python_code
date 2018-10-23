@@ -74,7 +74,7 @@ b = 3
 # print(1 > 1 and 3 < 5 or 4 > 5 and 2 > 1 and 9 > 8 or 7 < 6)
 # print( True or False)
 
-# 4.2 逻辑运算两边都是树脂
+# 4.2 逻辑运算两边都是数值
 # x or y ,if x is True, return x,else return y.
 # print(1 or 3)
 # print(100 or 3)
