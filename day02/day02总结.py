@@ -74,7 +74,7 @@ b = 3
 # print(1 > 1 and 3 < 5 or 4 > 5 and 2 > 1 and 9 > 8 or 7 < 6)
 # print( True or False)
 
-# 4.2 逻辑运算两边都是树脂
+# 4.2 逻辑运算两边都是数值
 # x or y ,if x is True, return x,else return y.
 # print(1 or 3)
 # print(100 or 3)
@@ -109,6 +109,7 @@ not in
 # conment = input('>>>')
 # s1 = 'tmd'
 # print( 2 ** 32)
+<<<<<<< HEAD
 
 '''
 三：编码初识别
@@ -316,3 +317,5 @@ if username == 'zz' and password == '123':
 # s = 'dadazczcxjfkasdfjklsdfjl'
 # print(len(s)) 测试字符串长度
 # print(s.count('d')) 计算某些元素出现的次数
+=======
+>>>>>>> b1cae9f369e16ee8d1bcd147c1a09359900cec68
