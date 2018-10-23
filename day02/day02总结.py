@@ -109,7 +109,7 @@ not in
 # conment = input('>>>')
 # s1 = 'tmd'
 # print( 2 ** 32)
-<<<<<<< HEAD
+# <<<<<<< HEAD
 
 '''
 三：编码初识别
@@ -293,10 +293,10 @@ if username == 'zz' and password == '123':
 # print(z2)
 
 '''is系列----***'''
-# name = '123'
+name = '123'
 # print(name.isalnum())#字符串由字母或数字组成
 # print(name.isalpha())#字符串只由字母组成
-# print(name.isdigit())#字符串只由数字组成 str ---> int 可以作为一个判断条件
+print(name.isdigit())#字符串只由数字组成 str ---> int 可以作为一个判断条件
 
 '''格式化输出 format-----***'''
 # res = '{} {} {}'.format('egon', 18, 'male')
@@ -317,5 +317,5 @@ if username == 'zz' and password == '123':
 # s = 'dadazczcxjfkasdfjklsdfjl'
 # print(len(s)) 测试字符串长度
 # print(s.count('d')) 计算某些元素出现的次数
-=======
->>>>>>> b1cae9f369e16ee8d1bcd147c1a09359900cec68
+# =======
+# >>>>>>> b1cae9f369e16ee8d1bcd147c1a09359900cec68
