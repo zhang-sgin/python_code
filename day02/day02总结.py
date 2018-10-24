@@ -293,10 +293,10 @@ if username == 'zz' and password == '123':
 # print(z2)
 
 '''is系列----***'''
-name = '123'
+# name = '123'
 # print(name.isalnum())#字符串由字母或数字组成
 # print(name.isalpha())#字符串只由字母组成
-print(name.isdigit())#字符串只由数字组成 str ---> int 可以作为一个判断条件
+# print(name.isdigit())#字符串只由数字组成 str ---> int 可以作为一个判断条件
 
 '''格式化输出 format-----***'''
 # res = '{} {} {}'.format('egon', 18, 'male')
@@ -317,5 +317,225 @@ print(name.isdigit())#字符串只由数字组成 str ---> int 可以作为一�
 # s = 'dadazczcxjfkasdfjklsdfjl'
 # print(len(s)) 测试字符串长度
 # print(s.count('d')) 计算某些元素出现的次数
-# =======
-# >>>>>>> b1cae9f369e16ee8d1bcd147c1a09359900cec68
+
+'''五：for循环'''
+# s1 = 'fdksj'
+#for 变量 in iterable:  有限循环
+# for i in s1:
+#     print(i+'alex')
+
+# 只要循环被break打断，则不执行else程序。
+# for i in s1:
+#     print(i)
+#     if i == 'k':
+#         break
+# else:
+#     print(666)
+# for break continue
+
+'''列表list'''
+# list与其他语言的数组想死，基础的数据类型，可以存储各种数据类型，可以存储大量的数据
+# 536870912 个元素,64位python的限制是 1152921504606846975 个元素。而且列表是有序的，有索引值，可切片，方便取值。
+# li = ['alex', 123, True, (1, 2, 3, 'wusir'), [1, 2, 3, '小明', ], {'name': 'alex'}]
+# how:
+# 1.索引切片
+# 2.增删改查，机器其他操作
+# 3.列表的嵌套
+
+
+# 1.索引切片(与字符串一样)
+# l1 = ['alex', 'wusir', '太白', 100, '女神']
+# print(l1[0],type(l1[0]))
+# print(l1[-2],type(l1[-2]))
+# print(l1[:-2])
+
+# 2.增删改查
+# l1 = ['alex', 'wusir', 'wusir', 'wusir','太白', 100, '女神']
+# 增 三种方式：append insert extend
+# l1.append('zz')
+# l1.insert(1,'zz') 根据索引位置插入
+# l1.extend(['abc', 'erf'])迭代增加
+# print(l1)
+
+# 删 pop remove clear del
+# ret = l1.pop(1) 根据索引删除,可以有返回值
+# print(ret)
+# print(l1)
+# l1.remove('wusir')
+# l1.clear()
+# del l1[::-2]
+# print(l1)
+
+# 改
+# l1[0] = 'sb' 根据索引修改
+# l1[::2] = 'abcc' 加上步长一定要一一对应
+# print(l1)
+
+# 查 for
+# for i in l1:
+#     print(i)
+
+# 其他方法
+# print(l1.index('太白')) 通过元素查索引
+# print(len(l1))计算长度
+# print(l1.count('wusir')) 计算出现次数
+# l1 = [2, 3, 5, 1, 9, 8, 7, 6]
+# l1.sort() 从大到小排序
+# l1.sort(reverse=True)  从小到大排序
+# print(l1)
+# l1.reverse() 列表反转
+# print(l1)
+
+l1 = ['alex', 'wusir', [1,'taibai']]
+# l1[1] = l1[1].upper() wusir全部大写
+# print(l1)
+
+# l1[-1][-1] = l1 [-1][-1].capitalize() taibai首字母大写
+# print(l1)
+# print(l1[-1][-1]) 打印嵌套列表数据
+
+# range 可以看做自定义的数字范围的列表，一般都是与for循环结合。
+# print(range(1,100))
+# for i in range(10):
+#     print(i)
+# for i in range(1,20,2): 打印20以内奇数
+#     print(i)
+# for i in range(20,1,-1):
+#     print(i)
+
+# l1 = ['alex', 'wusir', 'wusir', 100, '女神']
+# for i in l1: 打印索引
+#     print(l1.index(i))
+
+# for i in range(len(l1)): 利用for range打印列表的索引
+#     print(i)
+
+
+'''元组 tuple'''
+# tu = (1, True, [12, 3], 'afdlsfa')
+# 元组是只读列表。
+# 可以索引，可以切片（步长）。
+# 不能增删改（儿子不能，孙子有可能），只能查询。
+# index, count， for 循环。
+
+'''字典dic
+键值对出现，key:value 字典的key是唯一的，可以存储大量的关系型数据
+字典3.5版本的包括3.5之前的版本都是无序的，3.6之后是有序的
+字典的key：str，int(bool值，tuple不常用)，不可变的数据类型（可哈希的）
+字典的value：任意数据类型
+'''
+# dic = {'name_list':['张三', '李四'],
+#        'alex': {'sex':'男','爱好': '非男'},
+#        }
+# print(dic)
+'''增删改查及其他操作'''
+dic = {'name': 'TaiBai', 'age': 25, 'sex': '男',}
+'''增'''
+# 按照键值对，有则改之，无则添加
+# dic['job'] = 'IT'
+# dic['name'] = 'zz'
+# print(dic)
+
+# setdefault 有则不变，无则添加
+# dic.setdefault('job','IT')
+# dic.setdefault('name','zz')
+# print(dic)
+
+'''删'''
+# ret = dic.pop('name')
+# print(ret) #返回值是删除的值
+# print(dic)
+# 清空
+# dic.clear()
+# print(dic)
+# del dic['name']
+# print(dic)
+'''改'''
+# dic['name'] = 'zz'
+# print(dic)
+
+# dic = {"name":"zz","age":"18","sex":"male"}
+# dic2 = {"name":'z1',"weight":75}
+# dic2.update(dic) #将dic的所有键值对覆盖并添加到dic2中，dic不变
+# print(dic2)
+# print(dic)
+
+'''查'''
+# print(dic['name'])
+# print(dic['name1']) #程序报错
+# get
+# print(dic.get('name'))
+# print(dic.get('name1')) #程序返回none
+# print(dic.get('name1','没有此键'))
+
+# 类似于列表的容器
+# print(dic.keys())
+# for i in dic.keys():
+#     print(i)
+
+# print(list(dic.keys())) #输出key
+# print(dic.values()) #输出value
+# print(list(dic.items())) #按key:value的形式输出
+
+# for k,v in dic.items():
+#     print(k,v)
+
+'''嵌套****'''
+# dic = {'name': 'alex',
+#        'name_list': ['wusir','taibai'],
+#        1: {'name': '日天'}}
+#将wusir全部变成大写
+# print(dic['name_list'][0])
+# dic['name_list'][0] = dic['name_list'][0].upper()
+# print(dic)
+# 将日天改为泰迪
+# dic[1]['name'] = '泰迪'
+# print(dic)
+
+'''数据类型补充'''
+# tuple 元祖中如果只有一个元素且没有逗号，那么他不是元祖而是该元素对应的类型
+# tu1 = (1)
+# print(tu1,type(tu1))
+# tu2 = (2)
+# print(tu2,type(tu2))
+# tu3 = ([1,2,3])
+# print(tu3,type(tu3))
+# tu4 = (1,)
+# print(tu4,type(tu4))
+
+# == 比较的是两边的数值是否相同
+# is 比较的是内存地址是否相同
+# id 查询的是内存地址
+
+# 在正向循环一个list中，如果改变list的大小，那么结果可能和你预想的不一样。
+l1 = [11, 22, 33, 44, 55, 66]
+# 将索引为奇数位置的元素删除
+# 第一种方式：
+# del l1[1::2]
+# print(l1)
+# 第二种方式： for循环
+# for ind in range(len(l1)):
+#     print(ind,l1)
+#     if ind % 2==1:
+#         del l1[ind]
+#     print(ind,l1)
+# print(l1)
+# 第三种方式：倒叙删除
+# for ind in range(len(l1)-1,-1,-1):
+#     if ind % 2==1:
+#         del l1[ind]
+# print(l1)
+
+dic = {'k1':'v1','k2':'v2','k3':'v3','name': 'alex'}
+# 将字典中的key键含有'k'元素的所有键值对删除
+# for key in dic: #删除的过程中改变了顺序，所以运行报错
+#     if 'k' in key:
+#         del dic[key]
+l1 = []
+for key in dic:
+    if 'k' in key:
+        l1.append(key)
+print(l1)
+for key in l1:
+    del dic[key]
+print(dic)
