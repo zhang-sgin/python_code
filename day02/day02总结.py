@@ -266,20 +266,20 @@ if username == 'zz' and password == '123':
     print('登录成功')
 '''
 
-# z = 'alex wusir barry'
+z = 'alex wusir barry'
 # zz = 'alex,wusir,barry'
 # zz1 = ',alex,wusir,barry'
 '''str --->list *** 字符串转成列表'''
 # split() 默认按照空格分割
-# z1  = z.split()
+z1  = z.split()
 # z2 = zz.split(',')
-# print(z1)
+print(z1)
 # print(zz1.split(',',1))
 
-# zz = 'oldboy'
+zz = 'oldboy'
 # join 插入字符串
-# z1 = '-'.join(zz)
-# print(z1)
+z1 = '-'.join(zz)
+print(z1)
 
 # list--->str   列表转换成字符串
 # l1 = ['alex', 'wusir', 'barry'] # --> s = 'alex wusir barry'
@@ -350,7 +350,7 @@ if username == 'zz' and password == '123':
 # print(l1[:-2])
 
 # 2.增删改查
-# l1 = ['alex', 'wusir', 'wusir', 'wusir','太白', 100, '女神']
+l1 = ['alex', 'wusir', 'wusir', 'wusir','太白', 100, '女神']
 # 增 三种方式：append insert extend
 # l1.append('zz')
 # l1.insert(1,'zz') 根据索引位置插入
@@ -392,7 +392,7 @@ l1 = ['alex', 'wusir', [1,'taibai']]
 
 # l1[-1][-1] = l1 [-1][-1].capitalize() taibai首字母大写
 # print(l1)
-# print(l1[-1][-1]) 打印嵌套列表数据
+print(l1[-1][-1]) #打印嵌套列表数据
 
 # range 可以看做自定义的数字范围的列表，一般都是与for循环结合。
 # print(range(1,100))
@@ -484,10 +484,12 @@ dic = {'name': 'TaiBai', 'age': 25, 'sex': '男',}
 # dic = {'name': 'alex',
 #        'name_list': ['wusir','taibai'],
 #        1: {'name': '日天'}}
-#将wusir全部变成大写
+# 将wusir全部变成大写
 # print(dic['name_list'][0])
+# print(dic[1]['name'])
 # dic['name_list'][0] = dic['name_list'][0].upper()
 # print(dic)
+# print(['name_list'][0])
 # 将日天改为泰迪
 # dic[1]['name'] = '泰迪'
 # print(dic)
@@ -508,7 +510,7 @@ dic = {'name': 'TaiBai', 'age': 25, 'sex': '男',}
 # id 查询的是内存地址
 
 # 在正向循环一个list中，如果改变list的大小，那么结果可能和你预想的不一样。
-l1 = [11, 22, 33, 44, 55, 66]
+# l1 = [11, 22, 33, 44, 55, 66]
 # 将索引为奇数位置的元素删除
 # 第一种方式：
 # del l1[1::2]
@@ -526,16 +528,16 @@ l1 = [11, 22, 33, 44, 55, 66]
 #         del l1[ind]
 # print(l1)
 
-dic = {'k1':'v1','k2':'v2','k3':'v3','name': 'alex'}
+# dic = {'k1':'v1','k2':'v2','k3':'v3','name': 'alex'}
 # 将字典中的key键含有'k'元素的所有键值对删除
 # for key in dic: #删除的过程中改变了顺序，所以运行报错
 #     if 'k' in key:
 #         del dic[key]
-l1 = []
-for key in dic:
-    if 'k' in key:
-        l1.append(key)
-print(l1)
-for key in l1:
-    del dic[key]
-print(dic)
+# l1 = []
+# for key in dic:
+#     if 'k' in key:
+#         l1.append(key)
+# print(l1)
+# for key in l1:
+#     del dic[key]
+# print(dic)
