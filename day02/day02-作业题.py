@@ -11,3 +11,36 @@
 6. 用户输入Q或者q退出程序。
 7. 退出程序之后，依次显示用户购买的商品，数量，单价，以及此次共消费多少钱，账户余额多少。
 '''
+flag=True
+dic = {"1":{"name":"电脑","price":"1999"},
+       "2":{"name":"鼠标","price":"100"},
+       "3":{"name":"键盘","price":"500"},
+       "4":{"name":"手机","price":"5000"},
+}
+show_dic = []
+# while True:
+#     money = input("请输入需要充值的金额：")
+#     if money.isdigit():
+#         money=int(money)
+#         print("您的资产：",money )
+#         break
+#     else:
+#         print("请输入正确金额")
+
+flag = True
+while flag:
+    for i in dic:
+        print(i, dic[i]["name"]+' '+dic[i]["price"])
+    print('输入Q或q进行结算\n输入Q或q退出程序(如不结算购物车可直接退出)')
+    chooise = input('有如上商品想要点啥？').strip()
+    if chooise == '1':
+        print("你已选择了电脑，并添加到购物车")
+
+# flag=True
+# dic = [{"name":"电脑","price":1999},
+#        {"name":"鼠标","price":100},
+#        {"name":"键盘","price":500},
+#        {"name":"手机","price":5000},
+# ]
+# print(dic)
+

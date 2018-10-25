@@ -392,7 +392,7 @@ l1 = ['alex', 'wusir', [1,'taibai']]
 
 # l1[-1][-1] = l1 [-1][-1].capitalize() taibai首字母大写
 # print(l1)
-print(l1[-1][-1]) #打印嵌套列表数据
+# print(l1[-1][-1]) #打印嵌套列表数据
 
 # range 可以看做自定义的数字范围的列表，一般都是与for循环结合。
 # print(range(1,100))
