@@ -78,6 +78,7 @@ while flag:
                 if all_price <= money:
                     print('消费成功，您的账单总金额为{},账户余额{},欢迎下次光临！'.format(all_price, money - all_price))
     elif chooise.upper() == 'Q':
-        print('您本次消费金额为{}元，剩余金额为{}元')
+        print('您本次消费金额为{}元，剩余金额为{}元'.format(all_price,money-all_price))
+        break
     else:
         print('-------------您的输入有误，请重新输入---------------------')
