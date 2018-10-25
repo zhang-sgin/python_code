@@ -273,13 +273,13 @@ z = 'alex wusir barry'
 # split() 默认按照空格分割
 z1  = z.split()
 # z2 = zz.split(',')
-print(z1)
+# print(z1)
 # print(zz1.split(',',1))
 
 zz = 'oldboy'
 # join 插入字符串
-z1 = '-'.join(zz)
-print(z1)
+# z1 = '-'.join(zz)
+# print(z1)
 
 # list--->str   列表转换成字符串
 # l1 = ['alex', 'wusir', 'barry'] # --> s = 'alex wusir barry'

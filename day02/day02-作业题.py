@@ -18,45 +18,66 @@ dic = {"1":{"name":"电脑","price":"1999"},
        "4":{"name":"手机","price":"5000"},
 }
 flag=True
-show_dic = {}
-# while True:
-#     money = input("请输入需要充值的金额：")
-#     if money.isdigit():
-#         money=int(money)
-#         print("您的资产：",money )
-#         break
-#     else:
-#         print("请输入正确金额")
+account1 =0
+account2 =0
+account3 =0
+account4 =0
+while True:
+    money = input("请输入需要充值的金额：")
+    if money.isdigit():
+        money=int(money)
+        print("您的资产：",money )
+        break
+    else:
+        print("请输入正确金额")
 
 flag = True
 while flag:
     for i in dic:
         print(i, dic[i]["name"]+' '+dic[i]["price"])
-    print('输入Q或q进行结算\n输入Q或q退出程序(如不结算购物车可直接退出)')
+    print('输入n或N进行结算'
+          '输入Q或q退出程序(如不结算购物车可直接退出)')
     chooise = input('有如上商品想要点啥？').strip()
     if chooise.isdigit():
         chooise = int(chooise)
         if 0 < chooise <= len(dic):
-            if (chooise - 1) not in show_dic:
-                show_dic[chooise - 1]['amount'] += 1
-            print('您选择的商品信息：商品名称：{}商品价格：{}商品数量：1，并成功添加到购物车中。' \
-                  .format(dic[chooise]['name'], dic[chooise - 1]['price']))
+            if chooise == 1:
+                account1+=1
+                print('您选择的商品信息：商品名称：电脑，商品价格：1999商品数量：{}，并成功添加到购物车中。'\
+                  .format(account1))
+            elif chooise == 2:
+                account2+=1
+                print('您选择的商品信息：商品名称：鼠标，商品价格：100 商品数量：{}，并成功添加到购物车中。'\
+                  .format(account2))
+            elif chooise == 3:
+                account3+=1
+                print('您选择的商品信息：商品名称：键盘，商品价格：500 商品数量：{}，并成功添加到购物车中。'\
+                  .format(account3))
+            elif chooise == 4:
+                account4+=1
+                print('您选择的商品信息：商品名称：手机，商品价格：5000 商品数量：{}，并成功添加到购物车中。'\
+                  .format(account4))
         else:
-            print('您输入的序号超出范围，请重新输入：')
-
-
-
-
-
-
-
-
-
-# flag=True
-# dic = [{"name":"电脑","price":1999},
-#        {"name":"鼠标","price":100},
-#        {"name":"键盘","price":500},
-#        {"name":"手机","price":5000},
-# ]
-# print(dic)
-
+            print('--------------您输入的商品序号超出范围，请重新输入！--------------------')
+    elif chooise.upper() == 'N':
+            print('您购物车的具体商品如下：')
+            all_price = account1 * 1999 + account2 * 100 + account3 * 500 + account4 * 5000
+            print('--------------------账单总金额为{}------------------'.format(all_price))
+            print('''
+            '您选择的商品信息：商品名称：电脑，商品价格：1999 商品数量：{}。'
+              '您选择的商品信息：商品名称：鼠标，商品价格：100  商品数量：{}。'
+              '您选择的商品信息：商品名称：键盘，商品价格：500  商品数量：{}。'
+              '您选择的商品信息：商品名称：手机，商品价格：5000 商品数量：{}。'''\
+              .format(account1,account2,account3,account4))
+            if all_price <= money:
+                print('消费成功，您的账单总金额为{},账户余额{},欢迎下次光临！'.format(all_price,money-all_price))
+                break
+            while all_price > money:
+                del_option = input('金额不足，请放下一些东西吧！')
+                all_price = all_price - int(dic[del_option]["price"])
+                if all_price <= money:
+                    print('消费成功，您的账单总金额为{},账户余额{},欢迎下次光临！'.format(all_price, money - all_price))
+    elif chooise.upper() == 'Q':
+        print('您本次消费金额为{}元，剩余金额为{}元')
+    else:
+        print('-------------您的输入有误，请重新输入---------------------')
