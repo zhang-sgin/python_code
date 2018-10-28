@@ -10,7 +10,59 @@
 通过代码，将其构建成这种数据类型：
 [{'序号': '1', '部门': Python, '人数': 30, '平均年龄': 26, '备注': '单身狗'}, ......]
 '''
+z0=[]
+dic={}
+with open('a1.txt',encoding='utf-8') as f1:
+    zz_open = f1.readline().strip().split()
+    # print(zz_open)
+    for line in f1:
+        z2=line.strip().split()
+        # print(z2)
+        for xu in range(len(z2)):
+            dic[zz_open[xu]] = z2[xu]
+            # print(dic)
+            z0.append(dic)
+print(z0)
 
+# lst=[]
+# f = open('a1.txt','r',encoding='utf-8')
+# con = f.readline().strip().split()
+# for line in f:
+#     dic = {}
+#     ls = line.strip().split()
+#     for n in range(len(ls)):
+#         dic [con[n]] = ls[n]
+#         print(dic)
+#     # lst.append(dic)
+# # print(lst)
+# f.close()
+
+
+
+
+# z1 = []
+# dic={}
+# with open('a1.txt',encoding='utf-8') as f1:
+#     zz_open = f1.readline().strip().split()
+#     for line in f1:
+#         z2=line.strip().split()
+#         for xu in range(len(z2)):
+#             dic[zz_open[xu]] = z2[xu]
+#         z1.append(dic)
+#     print(z1)
+# f1.close()
+
+# lis = []
+# with open('a1.txt', encoding ='UTF-8',mode='r')as f:
+#     m = f.readline()  #你readline读取后文件指针就会跑到你读取的后面了
+#     n = m.split()
+#     for i in f:  #这个时候你在遍历文件就会排除你readline的第一行了
+#         dic ={}
+#         l = i.strip().split()
+#         for j in range(len(l)) :
+#             dic[n[j]] = l[j]
+#         lis.append(dic)
+#     print(lis)
 
 
 '''
