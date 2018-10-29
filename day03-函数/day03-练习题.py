@@ -89,11 +89,31 @@ PS: 字典中的value只能是字符串或列表
 6.
 写函数，函数接收四个参数分别是：姓名，性别，年龄，学历。用户通过输入这四个内容，然后将这四个内容传入到函数中，此函数接收到这四个内容，将内容追加到一个student_msg文件中。
 '''
+# def student(name,sex,age,xueli):
+#     with open('student_msg.txt',encoding='utf-8',mode='a') as f1:
+#         f1.write('{}|{}|{}|{}\n'.format(name,sex,age,xueli))
+# student('zz',18,'n','da')
+
+
 
 '''
 7.
 对第6题升级：支持用户持续输入，Q或者q退出，性别默认为男，如果遇到女学生，则把性别输入女。
 '''
+# def student(name,age,xueli,sex='男'):
+#     with open('student_msg.txt',encoding='utf-8',mode='a') as f1:
+#         f1.write('{}|{}|{}|{}\n'.format(name,age,xueli,sex))
+# while 1:
+#     name=input('请输入用户名（输入q退出）：')
+#     if name.upper() == 'Q':
+#         break
+#     age=input('请输入年龄：')
+#     xueli=input('请输入学历：')
+#     if name.startswith('1'):
+#         student(name,age,xueli)
+#     else:
+#         sex=input('请输入性别：')
+#         student(name,age,xueli,sex)
 
 '''
 8.
@@ -106,6 +126,37 @@ def test5(a, b):
 c = test5(b, a)
 print(c)
 '''
+import os
+# with open('08.txt', encoding='utf-8') as f1,open('08-bak.txt',encoding='utf-8',mode='w') as f2:
+#     for line in f1:
+#         new_line = line.replace('sb','qqa')
+#         f2.write(new_line)
+# os.remove('08.txt')
+# os.rename('08-bak.txt','08.txt')
+
+
+def change_file(filename, old, new):
+    with open(filename, encoding='utf-8') as f1,open('08-bak.txt',encoding='utf-8',mode='w') as f2:
+        for line in f1:
+            print(line)
+            new_line = line.replace(old,new)
+            f2.write(new_line)
+filename = input('请输入文件名：')
+old = input('请输入修改内容：')
+new = input('请输入修改后的内容：')
+change_file(filename,old,new)
+os.remove(filename)
+#可remove，rename时报错，明日再查
+os.rename('filename.bak', filename)
+
+
+# with open(filename, encoding='utf-8') as f1,open('filename.bak',encoding='utf-8',mode='w') as f2:
+#     for line in f1:
+#         new_line = line.replace(old,new)
+#         print(line)
+#         f2.write(new_line)
+# os.remove(filename)
+# os.rename('filename.bak',filename)
 
 '''
 9.
