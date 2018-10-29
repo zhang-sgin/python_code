@@ -10,86 +10,76 @@
 通过代码，将其构建成这种数据类型：
 [{'序号': '1', '部门': Python, '人数': 30, '平均年龄': 26, '备注': '单身狗'}, ......]
 '''
-z0=[]
-dic={}
-with open('a1.txt',encoding='utf-8') as f1:
-    zz_open = f1.readline().strip().split()
-    # print(zz_open)
-    for line in f1:
-        z2=line.strip().split()
-        # print(z2)
-        for xu in range(len(z2)):
-            dic[zz_open[xu]] = z2[xu]
-            # print(dic)
-            z0.append(dic)
-print(z0)
-
-# lst=[]
-# f = open('a1.txt','r',encoding='utf-8')
-# con = f.readline().strip().split()
-# for line in f:
-#     dic = {}
-#     ls = line.strip().split()
-#     for n in range(len(ls)):
-#         dic [con[n]] = ls[n]
-#         print(dic)
-#     # lst.append(dic)
-# # print(lst)
-# f.close()
-
-
-
-
-# z1 = []
-# dic={}
+# z0=[]
+# # dic={}
 # with open('a1.txt',encoding='utf-8') as f1:
 #     zz_open = f1.readline().strip().split()
+#     # print(zz_open) #把序号、部门、人数、年龄、备注取出，放入列表[zz_open]
 #     for line in f1:
+#         dic = {}
 #         z2=line.strip().split()
-#         for xu in range(len(z2)):
-#             dic[zz_open[xu]] = z2[xu]
-#         z1.append(dic)
-#     print(z1)
+#         # print(z2)  #除去序号...的其他内容取出放入列表[z2]
+#         z0.append(dict(zip(zz_open,z2)))
+#         # for xu in range(len(z2)):
+#         #     dic[zz_open[xu]] = z2[xu]
+#         #     # print(dic)
+#         # z0.append(dic)
+# print(z0)
 # f1.close()
-
-# lis = []
-# with open('a1.txt', encoding ='UTF-8',mode='r')as f:
-#     m = f.readline()  #你readline读取后文件指针就会跑到你读取的后面了
-#     n = m.split()
-#     for i in f:  #这个时候你在遍历文件就会排除你readline的第一行了
-#         dic ={}
-#         l = i.strip().split()
-#         for j in range(len(l)) :
-#             dic[n[j]] = l[j]
-#         lis.append(dic)
-#     print(lis)
-
-
 '''
 2.
 传入函数的字符串中, [数字]、[字母]、[空格]
-以及[其他]
-的个数，并返回结果。
+以及[其他]的个数，并返回结果。
 '''
-
+# def my_leno(s):
+#     c = 0
+#     for i in s:
+#         c+=1
+#     return c
+# print(my_leno('1qaz @WSX'))
 '''
 3.
 写函数，接收两个数字参数，返回比较大的那个数字。
 '''
-
+# def jsq(x,y):
+#     return x if x > y else y
+# print(jsq(1,2))
 '''
 4.
 写函数，检查传入字典的每一个value的长度, 如果大于2，那么仅保留前两个长度的内容，并将新内容返回给调用者。
 dic = {"k1": "v1v1", "k2": [11, 22, 33, 44]}
 PS: 字典中的value只能是字符串或列表
 '''
+# dic = {"k1": "v1v1", "k2": [11, 22, 33, 44]}
+# for k,v in dic.items():
+#     if len(v) > 2:
+#         dic[k] = v[0:2]
+#     print(dic)
+
+# def value(s):
+#     for k,v in s.items():
+#         if len(v) > 2:
+#             s[k] = v[0:2]
+#     print(s)
+# value(dic)
+
 
 '''
 5.
-写函数，此函数只接收一个参数且此参数必须是列表数据类型，此函数完成的功能是返回给调用者一个字典，此字典的键值对为此列表的索引及对应的元素。例如传入的列表为：[11, 22, 33]
-返回的字典为
-{0: 11, 1: 22, 2: 33}。
+写函数，此函数只接收一个参数且此参数必须是列表数据类型，此函数完成的功能是返回给调用者一个字典，此字典的键值对为此列表的索引及对应的元素。
+例如传入的列表为：[11, 22, 33]返回的字典为{0: 11, 1: 22, 2: 33}。
 '''
+l1 = [11, 22, 33]
+dic={}
+# for v in l1:
+#     l2 = l1.index(v)
+#     dic[l2] = v
+# print(dic)
+def list_z(x):
+    if x 
+    return
+list_z(l1)
+
 
 '''
 6.
@@ -98,7 +88,7 @@ PS: 字典中的value只能是字符串或列表
 
 '''
 7.
-对第9题升级：支持用户持续输入，Q或者q退出，性别默认为男，如果遇到女学生，则把性别输入女。
+对第6题升级：支持用户持续输入，Q或者q退出，性别默认为男，如果遇到女学生，则把性别输入女。
 '''
 
 '''
@@ -125,7 +115,6 @@ def test5(a, b):
 c = test5(b, a)
 print(c)
 '''
-
 '''
 10.
 写函数, 传入函数中多个实参(均为可迭代对象如字符串, 列表, 元祖, 集合等), 将每个实参的每个元素依次添加到函数的动态参数args里面.
@@ -178,7 +167,9 @@ wrapper()
 13.
 写函数, 接收两个数字参数, 将较小的数字返回.
 '''
-
+# def jsq(x,y):
+#     return x if x < y else y
+# print(jsq(1,2))
 '''
 14.
 写函数, 接收一个参数(此参数类型必须是可迭代对象), 将可迭代对象的每个元素以’_’相连接, 形成新的字符串, 并返回.
