@@ -127,36 +127,18 @@ c = test5(b, a)
 print(c)
 '''
 import os
-# with open('08.txt', encoding='utf-8') as f1,open('08-bak.txt',encoding='utf-8',mode='w') as f2:
-#     for line in f1:
-#         new_line = line.replace('sb','qqa')
-#         f2.write(new_line)
-# os.remove('08.txt')
-# os.rename('08-bak.txt','08.txt')
 
-
-def change_file(filename, old, new):
-    with open(filename, encoding='utf-8') as f1,open('08-bak.txt',encoding='utf-8',mode='w') as f2:
-        for line in f1:
-            print(line)
-            new_line = line.replace(old,new)
-            f2.write(new_line)
-filename = input('请输入文件名：')
-old = input('请输入修改内容：')
-new = input('请输入修改后的内容：')
-change_file(filename,old,new)
-os.remove(filename)
-#可remove，rename时报错，明日再查
-os.rename('filename.bak', filename)
-
-
-# with open(filename, encoding='utf-8') as f1,open('filename.bak',encoding='utf-8',mode='w') as f2:
-#     for line in f1:
-#         new_line = line.replace(old,new)
-#         print(line)
-#         f2.write(new_line)
-# os.remove(filename)
-# os.rename('filename.bak',filename)
+# def change_file(filename, old, new):
+#     with open(filename, encoding='utf-8') as f1,open('08-bak.txt',encoding='utf-8',mode='w') as f2:
+#         for line in f1:
+#             new_line = line.replace(old,new)
+#             f2.write(new_line)
+#     os.remove(filename)
+#     os.rename('08-bak.txt', filename)
+# filename = input('请输入文件名：')
+# old = input('请输入修改内容：')
+# new = input('请输入修改后的内容：')
+# change_file(filename,old,new)
 
 '''
 9.
@@ -170,6 +152,10 @@ def test5(a, b):
 c = test5(b, a)
 print(c)
 '''
+# a的结果是3
+# b的结果是5
+# c的结果是none
+# 因为局部空间已经有a/b变量赋值，所以不会拿上层空间的变量。c没有赋值所以是none
 '''
 10.
 写函数, 传入函数中多个实参(均为可迭代对象如字符串, 列表, 元祖, 集合等), 将每个实参的每个元素依次添加到函数的动态参数args里面.
