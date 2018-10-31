@@ -256,12 +256,12 @@ wrapper()
 例如: cal(7)
 计算7 * 6 * 5 * 4 * 3 * 2 * 1
 '''
-# def cal(x):
-#     if x==0 or x==1:
-#         return 1
-#     else:
-#         return (x*cal(x-1))
-# print(cal(7))
+def cal(x):
+    if x==1:
+        return 1
+    else:
+        return (x*cal(x-1))
+print(cal(7))
 '''
 17.
 写函数，返回一个扑克牌列表，里面有52项，每一项是一个元组
