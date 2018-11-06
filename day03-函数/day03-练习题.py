@@ -256,19 +256,28 @@ wrapper()
 例如: cal(7)
 计算7 * 6 * 5 * 4 * 3 * 2 * 1
 '''
-def cal(x):
-    if x==1:
-        return 1
-    else:
-        return (x*cal(x-1))
-print(cal(7))
+# def cal(x):
+#     if x==0 or x==1:
+#         return 1
+#     else:
+#         return (x*cal(x-1))
+# print(cal(7))
 '''
 17.
 写函数，返回一个扑克牌列表，里面有52项，每一项是一个元组
 例如：[(‘红心’，2), (‘草花’，2), …(‘黑桃’，‘A’)]
 '''
-
-
+# def puke():
+#     color = ['红心♥', '草花♣', '黑桃♠', '方块♦']
+#     num = range(2,11)
+#     Aj = ["A","J","Q","K"]
+#     pk=[]
+#     Aj.extend(num)
+#     for i in color:
+#         for j in Aj:
+#             pk.append(i+str(j))
+#     print(len(pk),pk)
+# puke()
 
 '''
 18.
@@ -279,3 +288,14 @@ def wrapper():
 wrapper()
 你可以任意添加代码, 用两种或以上的方法, 执行inner函数.
 '''
+# def wrapper():
+#     def inner():
+#         print(666)
+#     inner()
+# wrapper()
+
+# def wrapper():
+#     def inner():
+#         print(666)
+#     return inner
+# wrapper()()
