@@ -11,13 +11,15 @@
 		7:注销
 		8:退出程序
 	2)，用户输入选项，3~6选项必须在用户登录成功之后，才能访问成功。
-	3)，用户选择登录，用户名密码从register文件中读取验证，三次机会，没成功则结束整个程序运行，成功之后，可以选择访问3~6项，访问页面之前，必须要在log文件中打印日志，日志格式为-->用户:xx 在xx年xx月xx日 执行了 %s函数，访问页面时，页面内容为：欢迎xx用户访问评论（文章，日记，收藏）页面
+	3)，用户选择登录，用户名密码从register文件中读取验证，三次机会，没成功则结束整个程序运行，
+	    成功之后，可以选择访问3~6项，访问页面之前，必须要在log文件中打印日志，日志格式为-->用户:xx 在xx年xx月xx日 执行了 %s函数，
+	    访问页面时，页面内容为：欢迎xx用户访问评论（文章，日记，收藏）页面
 	4)，如果用户没有注册，则可以选择注册，注册成功之后，可以自动完成登录，然后进入首页选择。
 	5)，注销用户是指注销用户的登录状态，使其在访问任何页面时，必须重新登录。
 	6)，退出程序为结束整个程序运行。
 '''
 
-import  os
+import  os,time
 login_status={'username':None,'status':False}
 def login(x):
     def inner(*args,**kwargs):
@@ -48,7 +50,7 @@ def login(x):
 def register():
     register_user_name = input('请注册您的用户名：')
     register_password = input('请注册您的用户名密码：')
-    with open('register', encoding='utf-8',mode='r+')as f_register:
+    with open('registry2.txt', encoding='utf-8',mode='r+')as f_register:
         for line in f_register:
             user_info = line.split(' ')
             if register_user_name in user_info:
@@ -57,24 +59,46 @@ def register():
             else:
                 f_register.write(register_user_name + ' ' + register_password + '\n')
                 print('{}用户注册成功'.format(register_user_name))
-                break
+                login_status['username'] = register_user_name
+                login_status['status'] = register_password
 
+def timeer(x):
+    def inner(*args,**kwargs):
+        struct_time = time.localtime()
+        time_info = time.strftime("%Y-%m-%d %H:%M:%S", struct_time)
+        with open('home-log.txt',encoding='utf-8',mode='a')as f_log:
+            f_log.write('%s先生在%s时，执行了%s函数\n'%(login_status['username'],time_info,x.__name__))
+            ret = x(*args,**kwargs)
+            return ret
+    return inner
 
 @login
+@timeer
 def wenzhang():
-    print('欢迎打开文章页面')
+    print('欢迎%s打开文章页面'%(login_status['username']))
 
 @login
+@timeer
 def riji():
-    print('欢迎打开日记页面')
+    print('欢迎%s打开日记页面' % (login_status['username']))
 
 @login
+@timeer
 def comment():
-    print('欢迎打开评论页面')
+    print('欢迎%s打开评论页面' % (login_status['username']))
 
 @login
+@timeer
 def shoucang():
-    print('欢迎打开收藏页面')
+    print('欢迎%s打开收藏页面' % (login_status['username']))
+
+def zhuxiao():
+    login_status['username'] = None
+    login_status['status'] = False
+    print('您登陆的用户已注销请重新登录')
+
+def tuichu():
+    quit()
 
 dic = {
     1:login,
@@ -82,7 +106,9 @@ dic = {
     3: wenzhang,
     4: riji,
     5:comment,
-    6:shoucang
+    6:shoucang,
+    7:zhuxiao,
+    8:tuichu
 }
 
 while 1:
