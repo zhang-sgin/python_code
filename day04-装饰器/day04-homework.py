@@ -56,11 +56,11 @@ def register():
             if register_user_name in user_info:
                 print('用户已存在')
                 continue
-            else:
-                f_register.write(register_user_name + ' ' + register_password + '\n')
-                print('{}用户注册成功'.format(register_user_name))
-                login_status['username'] = register_user_name
-                login_status['status'] = register_password
+        else:
+            f_register.write(register_user_name + ' ' + register_password + '\n')
+            print('{}用户注册成功'.format(register_user_name))
+            login_status['username'] = register_user_name
+            login_status['status'] = register_password
 
 def timeer(x):
     def inner(*args,**kwargs):
@@ -71,6 +71,11 @@ def timeer(x):
             ret = x(*args,**kwargs)
             return ret
     return inner
+
+@login
+@timeer
+def haha():
+    print('欢迎%s，您已登陆'%(login_status['username']))
 
 @login
 @timeer
@@ -98,10 +103,11 @@ def zhuxiao():
     print('您登陆的用户已注销请重新登录')
 
 def tuichu():
+    print('拜拜了您嘞~')
     quit()
 
 dic = {
-    1:login,
+    1:haha,
     2:register,
     3: wenzhang,
     4: riji,

@@ -1,18 +1,3 @@
 zz 123
-cz 234
-
-haha 123
-haha 123
-haha 123
-haha 123
-haha 123
-haha 123
-nn 123
-nn 123
-nn 123
-nn 123
-nn 123
-nn 123
-nn 123
-nn 123
-nn 123
+cz 123
+z 234
