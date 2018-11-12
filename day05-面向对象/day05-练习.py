@@ -18,8 +18,37 @@
   1.9 通过p2对象找到Person的静态变量 soul
   2.0 通过p3对象找到Person的静态变量 language
 '''
-class Person:
-
+# class Person:
+#     animal = '高级动物'
+#     soul = '有灵魂'
+#     language = '语言能力'
+#
+#     def __init__(self,country,name,sex,age,hight):
+#         self.country = country
+#         self.name = name
+#         self.sex = sex
+#         self.age = age
+#         self.hight = hight
+#
+#     def eat(self):
+#         return "%s在吃饭" % self.name
+#
+#     def sleep(self):
+#         return "%s在睡觉" % self.name
+#     def work(self):
+#         return "%s在工作"
+# p1=Person('中国','alex','未知',41,175)
+# p2=Person('美国','武大','男',35,165)
+# p3=Person('中国','zz','男',18,185)
+# p4=Person(p1.country,p2.name,p3.sex,p2.age,p3.hight)
+#
+# print(p1.eat())
+# print(p2.eat())
+# print(p3.eat())
+#
+# print(p1.animal)
+# print(p2.soul)
+# print(p3.language)
 
 
 
@@ -33,7 +62,33 @@ class Person:
   老李，90岁，男，开车去东北
   老李，90岁，男，最爱大保健
   老张…
+'''
 
+# class Person:
+#     def __init__(self, name, age, sex):
+#         self.name = name
+#         self.age = age
+#         self.sex = sex
+#
+#     def kc(self):
+#         return "%s,%s岁,%s,上山去砍柴" % (self.name, self.age, self.sex)
+#
+#     def qdb(self):
+#         return "%s,%s岁,%s,开车去东北" % (self.name, self.age, self.sex)
+#
+#     def dbj(self):
+#         return "%s,%s岁,%s,最爱大保健" % (self.name, self.age, self.sex)
+# xm=Person('小明',10,'男')
+# li=Person('老李',90,'男')
+# print(xm.kc())
+# print(xm.qdb())
+# print(xm.dbj())
+# print(li.kc())
+# print(li.qdb())
+# print(li.dbj())
+
+
+'''
 3,模拟英雄联盟写一个游戏人物的类（升级题）.
   要求:
   (1)创建一个 Game_role的类.
@@ -42,6 +97,22 @@ class Person:
       例: 实例化一个对象 盖伦,ad为10, hp为100
       实例化另个一个对象 剑豪 ad为20, hp为80
       盖伦通过attack方法攻击剑豪,此方法要完成 '谁攻击谁,谁掉了多少血,  还剩多少血'的提示功能.
+'''
+# class game_role:
+#     def __init__(self, name, ad, hp):
+#         self.name = name
+#         self.ad = ad
+#         self.hp = hp
+#
+#     def fight(self, role1):
+#         role1.hp = role1.hp - self.ad
+#         print('%s攻击了%s,%s还剩余%s血量' % (self.name, role1.name, role1.name, role1.hp))
+#
+# p1 = game_role('盖伦', 10, 100)
+# p2 = game_role('剑豪', 20, 80)
+# game_role.fight(p1,p2)
+
+'''
 1，暴力摩托程序（完成下列需求）：
 1.1创建三个游戏人物，分别是：
 •	苍井井，女，18，攻击力ad为20，血量200
@@ -68,13 +139,101 @@ class Person:
 （7）波多多利用斧子打了东尼木木一斧子，东尼木木还剩xx血。
 （8）苍井井骑着宝马打了骑着小踏板的东尼木木一双节棍，东尼木木哭了，还剩xx血。（选做）
 （9）波多多骑着小踏板打了骑着雅马哈的东尼木木一斧子，东尼木木哭了，还剩xx血。（选做）
+'''
+# class Person:
+#     def __init__(self, name, sex, age,ad, hp):
+#         self.name = name
+#         self.ad = ad
+#         self.sex = sex
+#         self.age = age
+#         self.hp = hp
+#     def k_attack(self,role1):
+#         role1.hp -= role1.ad
+#         return "%s赤手空拳攻击了%s%s滴血，%s还剩%s血" % (self.name,role1.name,self.ad,role1.name,role1.hp)
+#
+#     def game_equipment(self,equipment):
+#         self.equipment=equipment
+#
+#     def bike(self,cars):
+#         self.cars = cars
+#
+#
+# class weapon:
+#     def __init__(self,name,ad):
+#         self.name = name
+#         self.ad = ad
+#
+#     def q_attack(self,role1,role2):
+#         role2.hp = role2.hp - self.ad - role1.ad
+#         return "%s利用%s打了%s一%s，%s还剩%s血" % (role1.name,self.name,role2.name,self.name,role2.name,role2.hp)
+#
+#     def x_attack(self, p1, p2, m1, m2):
+#         p2.hp = p2.hp - self.ad - p1.ad
+#         return  "%s骑着%s打了骑着%s的%s一%s,%s哭了,%s还剩%s血" \
+#                 % (p1.name, m1.name, m2.name, p2.name, self.name, p2.name, p2.name, p2.hp)
+#
+#
+# class cars:
+#     def __init__(self,name,speed):
+#         self.name = name
+#         self.speed = speed
+#
+#     def biaoche(self,role1):
+#         return "%s骑着%s开着%s的车行驶在赛道上" % (role1.name,self.name,self.speed)
+#
+#
+# p1=Person("苍井井","女",18,20,200)
+# p2=Person("东尼木木","男",20,30,150)
+# p3=Person("波多多","女",19,50,80)
+#
+# s1=weapon("平底锅",20)
+# s2=weapon("斧子",50)
+# s3=weapon("双节棍",65)
+#
+# m1=cars("小踏板",60)
+# m2=cars("雅马哈",80)
+# m3=cars("宝马",120)
+
+# p1.bike(m1)
+# print(p1.cars.biaoche(p1))
+# p2.bike(m3)
+# print(p2.cars.biaoche(p2))
+# p3.bike(m2)
+# print(p3.cars.biaoche(p3))
+
+# print(p1.k_attack(p3))
+# print(p2.k_attack(p3))
+
+# p3.game_equipment(s1)
+# print(p3.equipment.q_attack(p3,p1))
+# p3.game_equipment(s2)
+# print(p3.equipment.q_attack(p3,p2))
+
+# p1.bike(m3)
+# p2.bike(m1)
+# p1.game_equipment(s3)
+# print(p1.equipment.x_attack(p1,p2,m3,m1))
+#
+# p3.bike(m1)
+# p2.bike(m2)
+# p3.game_equipment(s2)
+# print(p3.equipment.x_attack(p3,p2,m1,m2))
 
 
+'''
 2，定义一个类，计算圆的周长和面积。
 
+'''
 
+
+
+'''
 3，定义一个圆环类，计算圆环的周长和面积（升级题）。
+'''
 
+
+
+'''
 一，简答题：
 
 1，面向对象的三大特性是什么？
