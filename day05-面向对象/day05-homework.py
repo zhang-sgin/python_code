@@ -24,3 +24,113 @@
         5、查看所有学生的选课情况
         6、退出程序
 '''
+import  os,time
+import pickle
+# login_status={'username':None,'status':False}
+def login(x):
+    def inner(*args,**kwargs):
+        count = 1
+        while count < 4:
+            print('请先登录')
+            username=input('请输入用户名：').strip()
+            password=input('请输入密码：').strip()
+            with open('registry.txt',encoding='utf8')as f_registry:
+                for i in f_registry:
+                    login_line = i.strip().split(' ')
+                    if username == login_line[0] and password == login_line[1]:
+                        print('登录成功！')
+                        return {'user':username,'identify':True}
+                        # continue
+                else:
+                    print('用户名或密码错误，请重新输入，您还有{}次机会'.format(3 - count))
+                    count += 1
+    return inner
+# print(login())
+
+def list_class(x):
+    def inner(*args,**kwargs):
+        with open('class.txt', encoding='utf-8')as read_class:  # 列出所有课程
+            print('当前所有课程：')
+            for (num, value) in enumerate(read_class):
+                print(num, value, end='')
+    return inner
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+class admin(Person):
+    def a_create_class(self):
+        ad_create_class=input('请输入需要创建的课程：')
+        with open('class.txt',encoding='utf-8',mode='a') as create_class:
+            create_class.write(ad_create_class+'\n')
+        print('%s创建成功'%(ad_create_class))
+
+
+    def a_create_account(self):
+        register_user_name = input('请您输入需要注册的学生用户名：')
+        register_password = input('请输入您需要注册的学生密码：')
+        with open('registry.txt', encoding='utf-8', mode='r+')as f_register:
+            for line in f_register:
+                user_info = line.split(' ')
+                if register_user_name in user_info:
+                    print('用户已存在,请重新输入')
+                    # continue
+            else:
+                f_register.write(register_user_name + ' ' + register_password +' '+'member' '\n')
+                print('{}用户注册成功'.format(register_user_name))
+        return
+
+    # @list_class
+    def a_list_class(self):
+        pass
+
+        def a_list_stu(self):
+            with open('registry.txt',encoding='utf-8')as list_stu: #列出所有学生
+                for i in list_stu:
+                    print(i.strip().split()[0])
+            return
+
+        def a_list_all_stu_class(self):
+            pass
+
+        def a_quit(self):
+            print('再见')
+            quit()
+
+
+
+class student(Person):
+    s_choose_class=[]
+    def list_all_class(self):
+        print('当前所有课程：')
+        with open('class.txt',encoding='utf-8')as read_class:
+            for (num,value) in enumerate(read_class):
+                print(num,value,end='')
+        return
+
+    def choose_class(self):
+        # with open('class.txt',encoding='utf-8')as read_class:
+        #     choose=print('请选择需要学习的课程：')
+        #     for (num,value) in enumerate(read_class):
+        #         print(num,value,end='')
+        with open('class.txt',encoding='utf-8')as read_class:
+            for i in read_class:
+                print(i.strip())
+        choose=input('请选择需要学习的课程：')
+        with open('registry.txt',encoding='utf-8',mode='w') as add_class:
+            for i2 in add_class:
+                add_class.write(i2 + choose)
+                print(i2)
+
+
+    def s_list_stu_class(self):
+        pass
+
+    def stu_quit(self):
+        print('再见')
+        quit()
+
+
+# p1=admin.a_create_class(0)
+p1=student.choose_class(0)
