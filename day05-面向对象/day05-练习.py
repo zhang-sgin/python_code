@@ -98,20 +98,20 @@
       实例化另个一个对象 剑豪 ad为20, hp为80
       盖伦通过attack方法攻击剑豪,此方法要完成 '谁攻击谁,谁掉了多少血,  还剩多少血'的提示功能.
 '''
-# class game_role:
-#     def __init__(self, name, ad, hp):
-#         self.name = name
-#         self.ad = ad
-#         self.hp = hp
-#
-#     def fight(self, role1):
-#         role1.hp = role1.hp - self.ad
-#         print('%s攻击了%s,%s还剩余%s血量' % (self.name, role1.name, role1.name, role1.hp))
-#
-# p1 = game_role('盖伦', 10, 100)
-# p2 = game_role('剑豪', 20, 80)
-# game_role.fight(p1,p2)
+class game_role:
+    def __init__(self, name, ad, hp):
+        self.name = name
+        self.ad = ad
+        self.hp = hp
 
+    def fight(self, role1):
+        role1.hp = role1.hp - self.ad
+        print('%s攻击了%s,%s还剩余%s血量' % (self.name, role1.name, role1.name, role1.hp))
+
+p1 = game_role('盖伦', 10, 100)
+p2 = game_role('剑豪', 20, 80)
+# game_role.fight(p1,p2)
+print(p1.name)
 '''
 1，暴力摩托程序（完成下列需求）：
 1.1创建三个游戏人物，分别是：
