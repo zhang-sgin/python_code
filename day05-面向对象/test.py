@@ -24,64 +24,96 @@
         5、查看所有学生的选课情况
         6、退出程序
 '''
-import json
-import os
-import sys
-class student:
-    def __init__(self,name):
-        self.name = name
+# import json
+# import os
+# import sys
+# class student:
+#     def __init__(self,name):
+#         self.name = name
+#
+#     def list_class(self):
+#         with open("new_class", 'r', encoding="utf8") as f_read_class:
+#             tmp = {}
+#             for index, i in enumerate(f_read_class.read().split("|"),1):
+#                 print(index, i)
+#                 tmp[str(index)] = i
+#             return tmp
+#
+#
+#     def choose_class(self):
+#         tmp = self.list_class()
+#         stu_choose_class = input("请选择你要选的课程的序号")
+#         if stu_choose_class in tmp:
+#             with open("user_class", 'r',  encoding="utf8") as f:
+#                 user_class = json.load(f)
+#                 if user_class.get(self.name):
+#                     user_class.get(self.name).append(tmp[stu_choose_class])
+#                 else:
+#                     user_class.setdefault(self.name,[tmp[stu_choose_class]])
+#
+#             with open("user_class", 'w', encoding="utf8") as f:
+#                 json.dump(user_class,f,ensure_ascii=False)
+#
+#
+#
+#     def list_stu_class(self):
+#         with open("user_class", 'r', encoding="utf8") as f:
+#             user_class = json.load(f)
+#             # print(user_class.get(self.name),type(user_class.get(self.name)))
+#             stu_list=user_class.get(self.name)
+#             stu_list = list(set(stu_list))
+#             print(stu_list)
+#
+#     def exit(self):
+#         exit()
+#
+#     def show(self):
+#         gongneng = {"查看课程": self.list_class, '选择课程': self.choose_class, "查看所选课程": self.list_stu_class,"退出":self.exit}
+#         while 1:
+#             tmp = {}
+#             for index, i in enumerate(gongneng, 1):
+#                 print(index, i)
+#                 tmp[str(index)] = gongneng[i]
+#             C = input("请输入你的选择")
+#             if C in tmp:
+#                 tmp[C]()
+#
+# class admin:
+#     def __init__(self,name):
+#         self.name=name
+#
+#
+# s=student("zz")
+# s.show()
 
-    def list_class(self):
-        with open("new_class", 'r', encoding="utf8") as f_read_class:
-            tmp = {}
-            for index, i in enumerate(f_read_class.read().split("|"),1):
-                print(index, i)
-                tmp[str(index)] = i
-            return tmp
 
+def warppe1(x):
+    def inner1(*args,**kwargs):
+        print('inner1')
+        return
+    return  inner1
 
-    def choose_class(self):
-        tmp = self.list_class()
-        stu_choose_class = input("请选择你要选的课程的序号")
-        if stu_choose_class in tmp:
-            with open("user_class", 'r',  encoding="utf8") as f:
-                user_class = json.load(f)
-                if user_class.get(self.name):
-                    user_class.get(self.name).append(tmp[stu_choose_class])
-                else:
-                    user_class.setdefault(self.name,[tmp[stu_choose_class]])
+def warppe2(x):
+    def inner2(*args,**kwargs):
+        print('inner1')
+        return
+    return  inner2
 
-            with open("user_class", 'w', encoding="utf8") as f:
-                json.dump(user_class,f,ensure_ascii=False)
+class zz:
 
+    @warppe1
+    @warppe2
+    def test(self):
+        print('class-zz')
 
+# zz.test(0)
 
-    def list_stu_class(self):
-        with open("user_class", 'r', encoding="utf8") as f:
-            user_class = json.load(f)
-            # print(user_class.get(self.name),type(user_class.get(self.name)))
-            stu_list=user_class.get(self.name)
-            stu_list = list(set(stu_list))
-            print(stu_list)
+class A:
+    def __init__(self):
+        self.a = 1
+        self.b = 2
 
-    def exit(self):
-        exit()
-
-    def show(self):
-        gongneng = {"查看课程": self.list_class, '选择课程': self.choose_class, "查看所选课程": self.list_stu_class,"退出":self.exit}
-        while 1:
-            tmp = {}
-            for index, i in enumerate(gongneng, 1):
-                print(index, i)
-                tmp[str(index)] = gongneng[i]
-            C = input("请输入你的选择")
-            if C in tmp:
-                tmp[C]()
-                
-class admin:
-    def __init__(self,name):
-        self.name=name
-
-
-s=student("zz")
-s.show()
+    def __len__(self):
+        return len(self.__dict__)
+a = A()
+print(len(a))

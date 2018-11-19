@@ -154,6 +154,7 @@ class student:
             for index, i in enumerate(f_read_class.read().split("|"), 1):
                 print(index, i)
                 tmp[str(index)] = i
+            print(tmp)
             return tmp
     
     def choose_class(self):
@@ -162,6 +163,7 @@ class student:
         if stu_choose_class in tmp:
             with open("user_class", 'r', encoding="utf8") as f:
                 user_class = json.load(f)
+                print(user_class,type(user_class))
                 if user_class.get(self.name):
                     user_class.get(self.name).append(tmp[stu_choose_class])
                 else:
@@ -190,7 +192,6 @@ class student:
             C = input("请输入你的选择:")
             if C in tmp:
                 tmp[C]()
-
 
 class admin:
     def __init__(self, name):
@@ -254,7 +255,7 @@ class admin:
 
 # s = student("zz")
 # s.show()
-
+# student.choose_class(0)
 # z=admin('zz')
 # z.a_list_stu_class()
 
