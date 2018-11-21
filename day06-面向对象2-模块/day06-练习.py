@@ -117,20 +117,21 @@ class A:
 #     return packet
 # print(redp())
 
-def redp():
-    money=int(input('请输入红包金额：'))
-    num=int(input('请输入红包个数：'))
-    packet=[]
-    # money100=money*100
-    while num:
-        num -= 1
-        if num == 0:
-            packet.append(money)
-            print('抢到红包%.2f元 红包抢完了!' % (money))
-        elif num > 0:
-            money100=round(random.uniform(0.01,money/num),2)
-            packet.append(money100)
-            money=round(money-money100,2)
-    return packet
-print(redp())
+# def redp():
+#     money=int(input('请输入红包金额：'))
+#     num=int(input('请输入红包个数：'))
+#     packet=[]
+#     # money100=money*100
+#     while num:
+#         num -= 1
+#         if num == 0:
+#             packet.append(money)
+#             print('抢到红包%.2f元 红包抢完了!' % (money))
+#         elif num > 0:
+#             money100=round(random.uniform(0.01,money/num),2)
+#             packet.append(money100)
+#             print('抢到红包%.2f元 剩余%d个!' % (money100, num))
+#             money=round(money-money100,2)
+#     return
+# redp()
 
