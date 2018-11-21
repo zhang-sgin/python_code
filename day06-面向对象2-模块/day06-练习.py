@@ -1,4 +1,5 @@
-import threading,random
+import sys,threading
+import random
 '''
 1、new方法和init方法执行的执行顺序
 '''
@@ -100,3 +101,36 @@ class A:
 '''
 7、发红包、制定金额和个数随机分配红包金额
 '''
+# money=int(input('请输入红包金额：'))
+# num=int(input('请输入红包个数：'))
+# def redp():
+#     money=10
+#     num=10
+#     packet=[]
+#     money100=money*100
+#     for i in range(num-1):
+#         any=random.randrange(money100+1)
+#         packet.append(any/100)
+#         money100 -=any
+#     if num == num:
+#         packet.append(money100/100)
+#     return packet
+# print(redp())
+
+def redp():
+    money=int(input('请输入红包金额：'))
+    num=int(input('请输入红包个数：'))
+    packet=[]
+    # money100=money*100
+    while num:
+        num -= 1
+        if num == 0:
+            packet.append(money)
+            print('抢到红包%.2f元 红包抢完了!' % (money))
+        elif num > 0:
+            money100=round(random.uniform(0.01,money/num),2)
+            packet.append(money100)
+            money=round(money-money100,2)
+    return packet
+print(redp())
+
