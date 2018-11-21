@@ -3,21 +3,37 @@ import random
 '''
 1、new方法和init方法执行的执行顺序
 '''
-class A:
-    def __init__(self):
-        self.x = 1
-        print('in init')
-
-    def __new__(cls, *args, **kwargs):
-        print('in __new__')
-        return object.__new__(cls)
+# 先执行new方法再执行init方法，
+# 新式类才有new方法，
+# new方法需要有一个cls参数，代表要实例化的类，
+# 需要有返回值，返回实例化出的实例
+# init的self参数就是new的返回的实例，不需要返回值
+# 如果new没有正确返回当前类cls的实例，那么init不会被调用
+# class A:
+#     def __init__(self):
+#         self.x = 1
+#         print('in init')
+#
+#     def __new__(cls, *args, **kwargs):
+#         print('in __new__')
+#         return object.__new__(cls)
 
 # obj = A()
 # print(obj.x)
-#先执行new方法再执行init方法，
 '''
 2、__call__方法在什么时候被调用
 '''
+# 需要把对象当成函数调用时，使用__call__方法
+# class person:
+#
+#     def __init__(self):
+#         pass
+#
+#     def __call__(self, *args, **kwargs):
+#         print(args)
+#
+# p= person()
+# p('zz', 'cz')
 
 '''
 3、请用写一个类，用反射为这个类添加一个静态属性

@@ -111,7 +111,7 @@ class game_role:
 p1 = game_role('盖伦', 10, 100)
 p2 = game_role('剑豪', 20, 80)
 # game_role.fight(p1,p2)
-print(p1.name)
+# print(p1.name)
 '''
 1，暴力摩托程序（完成下列需求）：
 1.1创建三个游戏人物，分别是：
@@ -426,16 +426,16 @@ d,Dog类中，有构造方法，封装一个毛色的属性，有eat方法，方
 '''
 3，下面代码执行结果是什么？为什么？
 '''
-# class Parent:
-#     def func(self):
-#         print('in Parent func')
-#
-#     def __init__(self):
-#         self.func()
-#
-# class Son(Parent):
-#     def func(self):
-#         print('in Son func')
+class Parent:
+    def func(self):
+        print('in Parent func')
+
+    def __init__(self):
+        self.func()
+
+class Son(Parent):
+    def func(self):
+        print('in Son func')
 
 # son1 = Son()
 # Son类继承Parent类，Parent中优先执行__init__方法，
