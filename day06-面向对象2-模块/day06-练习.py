@@ -101,21 +101,6 @@ class A:
 '''
 7、发红包、制定金额和个数随机分配红包金额
 '''
-# money=int(input('请输入红包金额：'))
-# num=int(input('请输入红包个数：'))
-# def redp():
-#     money=10
-#     num=10
-#     packet=[]
-#     money100=money*100
-#     for i in range(num-1):
-#         any=random.randrange(money100+1)
-#         packet.append(any/100)
-#         money100 -=any
-#     if num == num:
-#         packet.append(money100/100)
-#     return packet
-# print(redp())
 
 # def redp():
 #     money=int(input('请输入红包金额：'))
