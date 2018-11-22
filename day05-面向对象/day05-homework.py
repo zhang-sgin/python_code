@@ -163,7 +163,6 @@ class student:
         if stu_choose_class in tmp:
             with open("user_class", 'r', encoding="utf8") as f:
                 user_class = json.load(f)
-                print(user_class,type(user_class))
                 if user_class.get(self.name):
                     user_class.get(self.name).append(tmp[stu_choose_class])
                 else:

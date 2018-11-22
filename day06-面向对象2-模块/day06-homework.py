@@ -37,15 +37,32 @@
 '''
 import json
 
+print(
+    '''
+    文件描述：
+    classroom_member:：  班级里有哪些学生            {"1班": ["sb", "cz", "haha"], "2班": ["cz"], "3班": ["pl"]}
+    new_class：          课程列表                    语文|数学|英语|体育|地理|linux|python|
+    new_classroom：      班级列表                    1班|2班|3班|
+    new_user：           用户列表                    admin|123|admin     sb|123|member       zz|123|teacher      
+    tea_classroom：      讲师代了哪些班级            {"zz": ["1班", "2班"], "ad": ["2班", "3班", "1班", "1班"]}
+    user_class：         学员选了哪些课               {"cz": ["语文", "数学", "英语", "体育", "地理", "linux"]}
+    '''
+)
+
+
+
 class student:
     gg = {"查看课程": 'list_class', '选择课程': 'choose_class', "查看所选课程": 'list_stu_class', "退出": 'exit'}
-    
+
     def __init__(self, name):
         self.name = name
 
+    # 查看课程
     def list_class(self):
+        # 打开课程列表的存储文件
         with open("new_class", 'r', encoding="utf8") as f_read_class:
             tmp = {}
+            #将课程列表通过枚举放入字典
             for index, i in enumerate(f_read_class.read().split("|"), 1):
                 print(index, i)
                 tmp[str(index)] = i
@@ -53,17 +70,24 @@ class student:
             return tmp
 
     def choose_class(self):
+        #打印课程列表字典，列出课程列表+序号
         tmp = self.list_class()
         stu_choose_class = input("请选择你要选的课程的序号:")
+        #如果用户输入课程列表在字典中
         if stu_choose_class in tmp:
+            #打开学员选课文件
             with open("user_class", 'r', encoding="utf8") as f:
+                #将文件中内容通过json序列化出来，赋值给user_class
                 user_class = json.load(f)
-                print(user_class, type(user_class))
+                # 如果self.name在user_class的key中   {"cz": ["语文"]}
                 if user_class.get(self.name):
+                    #将用户选择的课程序号对应的课程添加到user_class的对应value中
                     user_class.get(self.name).append(tmp[stu_choose_class])
                 else:
+                    # 如果self.name没有在user_class的key中   {"cz": ["语文"]}
+                    # 那么使用setdefault将self.name:[用户选择的课程序号对应的课程]初始化进去
                     user_class.setdefault(self.name, [tmp[stu_choose_class]])
-
+            #写入文件
             with open("user_class", 'w', encoding="utf8") as f:
                 json.dump(user_class, f, ensure_ascii=False)
 
@@ -76,18 +100,51 @@ class student:
 
     def exit(self):
         exit()
-        
 
-    # def show(self):
-    #     gongneng = {"查看课程": self.list_class, '选择课程': self.choose_class, "查看所选课程": self.list_stu_class, "退出": self.exit}
-    #     while 1:
-    #         tmp = {}
-    #         for index, i in enumerate(gongneng, 1):
-    #             print(index, i)
-    #             tmp[str(index)] = gongneng[i]
-    #         C = input("请输入你的选择:")
-    #         if C in tmp:
-    #             tmp[C]()
+
+class teacher:
+    gg = {"查看所有课程": 'list_class', '查看所教班级': 'list_tea_classroom', "查看班级中的学生": 'list_classroom_stu', "退出": 'exit'}
+
+    def __init__(self, name):
+        self.name = name
+
+    def list_class(self):
+        with open("new_class", 'r', encoding="utf8") as f_read_class:
+            tmp = {}
+            for index, i in enumerate(f_read_class.read().split("|"), 1):
+                print(index, i)
+                tmp[str(index)] = i
+            # print(tmp)
+            return tmp
+
+    def list_tea_classroom(self):
+        with open("tea_classroom", 'r', encoding="utf8") as f:
+            tea_class = json.load(f)
+            stu_list = tea_class.get(self.name)
+            stu_list = list(set(stu_list))
+            print(stu_list)
+
+    def a_list_classroom(self):
+        print('查询所有班级')
+        with open("new_classroom", 'r', encoding="utf8") as f_read_class:
+            tmp = {}
+            for index, i in enumerate(f_read_class.read().split("|"), 1):
+                print(index, i)
+                tmp[str(index)] = i
+            return tmp
+
+    def list_classroom_stu(self):
+        tmp=teacher.a_list_classroom(self)
+        chooise_classroom=input('请输入查询班级：')
+        if chooise_classroom in tmp:
+            with open("classroom_member", 'r', encoding="utf8") as f:
+                list_member = json.load(f)
+                classroom_list = list_member.get(tmp[chooise_classroom])
+                classroom_list = list(set(classroom_list))
+                print(classroom_list)
+
+    def tea_exit(self):
+        exit()
 
 
 class admin:
@@ -101,6 +158,7 @@ class admin:
         create_class = input('请输入新增的课程：')
         with open('new_class', encoding='utf-8', mode='a')as f_create_class:
             f_create_class.write(create_class + '|')
+            print('{}课程创建成功！'.format(create_class))
 
     def a_create_account(self):
         register_user_name = input('请您输入需要注册的学生用户名：')
@@ -131,8 +189,6 @@ class admin:
                 login_line = i.strip().split('|')
                 if login_line[2] == 'member':
                     print(i.strip().split('|')[0])
-                    
-            # print(i.strip().split('|')[0])
 
     def a_list_stu_class(self):
         list_stu_name = input('请输入查询学生姓名：')
@@ -145,84 +201,86 @@ class admin:
     def create_teacher(self):
         create_teacher=input('请输入需要创建的讲师：')
         teacher_password = input('请输入您需要注册的讲师密码：')
-        teacher_classroom=input('请输入讲师带课班级：')
-        with open('tea_user', encoding='utf-8', mode='r+')as f_teacher:
+        with open('new_user', encoding='utf-8', mode='r+')as f_teacher:
             for line in f_teacher:
                 user_info = line.split('|')
                 if create_teacher in user_info:
                     print('用户已存在,请重新输入')
                     # continue
             else:
-                f_teacher.write(create_teacher + '|' + teacher_password + '|' + teacher_classroom + '\n')
+                f_teacher.write(create_teacher + '|' + teacher_password + '|' + 'teacher' + '\n')
                 print('{}讲师注册成功'.format(create_teacher))
-                
-    def tracher_classroom(self):
-        pass
+
+    def a_list_tea(self):
+        print('查询所有讲师')
+        with open('new_user', encoding='utf-8')as f_list_stu:
+            for i in f_list_stu:
+                login_line = i.strip().split('|')
+                if login_line[2] == 'teacher':
+                    print(i.strip().split('|')[0])
 
     def create_classroom(self):
         create_classroomn = input('请输入需要创建的班级：')
-        with open('classroom', encoding='utf-8', mode='r+')as f_classroom:
+        with open('new_classroom', encoding='utf-8', mode='r+')as f_classroom:
             for line in f_classroom:
                 user_info = line.split()
                 if create_classroomn in user_info:
                     print('班级已存在,请重新输入')
                     # continue
             else:
-                f_classroom.write(create_classroomn + '\n')
+                f_classroom.write(create_classroomn + '|')
                 print('{}班级创建成功'.format(create_classroomn))
 
-
-    def student_classroom(self):
-        pass
-    
-    
-    def admin_exit(self):
-        exit()
-
-    # def show(self):
-    #     gongneng = {"创建课程": self.a_create_class, '创建学生账号': self.a_create_account, "查看所有课程": self.a_list_class,
-    #                 "查看所有学员": self.a_list_stu, "查看学员选课情况": self.a_list_stu_class, "退出": self.admin_exit}
-    #     while 1:
-    #         tmp = {}
-    #         for index, i in enumerate(gongneng, 1):
-    #             print(index, i)
-    #             tmp[str(index)] = gongneng[i]
-    #         C = input("请输入你的选择:")
-    #         if C in tmp:
-    #             tmp[C]()
-
-
-'''
-    讲师用户 ：对于讲师用户来说，可以完成的功能如下
-        1、查看所有课程
-        2、查看所教班级
-        3、查看班级中的学生
-        4、退出程序
-'''
-
-class teacher:
-    gg = {"查看所有课程": 'list_class', '查看所教班级': 'list_tea_classroom', "查看班级中的学生": 'list_classroom_stu', "退出": 'exit'}
-
-    def __init__(self, name):
-        self.name = name
-
-    def list_class(self):
-        with open("new_class", 'r', encoding="utf8") as f_read_class:
+    def a_list_classroom(self):
+        print('查询所有班级')
+        with open("new_classroom", 'r', encoding="utf8") as f_read_class:
             tmp = {}
             for index, i in enumerate(f_read_class.read().split("|"), 1):
                 print(index, i)
                 tmp[str(index)] = i
-            # print(tmp)
             return tmp
 
-    def list_tea_classroom(self):
-        pass
+    def tracher_classroom(self): # 为讲师指定班级
+        tea = admin.a_list_tea(self)
+        tea_name = input("请输入讲师:")
+        tmp = admin.a_list_classroom(self)
+        tea_choose_classroom = input("请选择你要选的班级的序号:")
+        if tea_choose_classroom in tmp:
+            with open("tea_classroom", 'r', encoding="utf8") as f:
+                tea_classroom = json.load(f)
+                # print(tea_classroom, type(tea_classroom))
+                if tea_classroom.get(tea_name):
+                    tea_classroom.get(tea_name).append(tmp[tea_choose_classroom])
+                    print('为{}老师指定为{}班代课老师成功！'.format (tea_name,tmp[tea_choose_classroom]))
+                else:
+                    tea_classroom.setdefault(tea_name, [tmp[tea_choose_classroom]])
+                    print('为{}老师指定为{}班代课老师成功！'.format(tea_name, tmp[tea_choose_classroom]))
 
-    def list_classroom_stu(self):
-        pass
+            with open("tea_classroom", 'w', encoding="utf8") as f:
+                json.dump(tea_classroom, f, ensure_ascii=False)
 
-    def tea_exit(self):
+
+    def student_classroom(self): #为学生指定班级
+        stu = admin.a_list_stu(self)
+        stu_name = input("请输入学生:")
+        tmp = admin.a_list_classroom(self)
+        stu_choose_classroom = input("请选择为学生指定班级的序号:")
+        print(tmp)
+        if stu_choose_classroom in tmp:
+            with open("classroom_member", 'r', encoding="utf8") as f:
+                classroom_member = json.load(f)
+                if classroom_member.get(tmp[stu_choose_classroom]):
+                    print(classroom_member.get(tmp[stu_choose_classroom]))
+                    classroom_member.get(tmp[stu_choose_classroom]).append(stu_name)
+                else: #不存在如何初始化
+                    classroom_member.setdefault(tmp[stu_choose_classroom], [stu_name])
+
+            with open("classroom_member", 'w', encoding="utf8") as f:
+                json.dump(classroom_member, f, ensure_ascii=False)
+    
+    def admin_exit(self):
         exit()
+
 
 def login():
     print('欢迎来到选课系统！')
@@ -239,38 +297,43 @@ def login():
                         print('管理员%s登录成功！' % (username))
                         admin_user = admin(username)
                         # admin_user.show()
-                        tmp = {}
-                        for index, i in enumerate(admin_user.gg, 1):
-                            print(index, i)
-                            tmp[str(index)] = admin_user.gg[i]
-                        C = input("请输入你的选择：")  # 根据不同的选择, 执行不同的函数
-                        func = getattr(admin_user, tmp[C])
-                        func()
-                        return
+                        while 1:
+                            tmp = {}
+                            for index, i in enumerate(admin_user.gg, 1):
+                                print(index, i)
+                                tmp[str(index)] = admin_user.gg[i]
+                            C = input("请输入你的选择：")  # 根据不同的选择, 执行不同的函数
+                            func = getattr(admin_user, tmp[C])
+                            func()
+                        # return
                     elif login_line[2] == 'member':
                         print('学员%s登录成功！' % (username))
                         student_user = student(username)
-                        tmp = {}
-                        for index, i in enumerate(student_user.gg, 1):
-                            print(index, i)
-                            tmp[str(index)] = student_user.gg[i]
-                        C = input("请输入你的选择")  # 根据不同的选择, 执行不同的函数
-                        func = getattr(student_user, tmp[C])
-                        func()
+                        while 1:
+                            tmp = {}
+                            for index, i in enumerate(student_user.gg, 1):
+                                print(index, i)
+                                tmp[str(index)] = student_user.gg[i]
+                            C = input("请输入你的选择：")  # 根据不同的选择, 执行不同的函数
+                            func = getattr(student_user, tmp[C])
+                            func()
                         # student_user.show()
-                        return
-                    # elif
+                        # return
+                    elif login_line[2] == 'teacher':
+                        print('讲师%s登录成功！' % (username))
+                        teacher_user = teacher(username)
+                        while 1:
+                            tmp = {}
+                            for index, i in enumerate(teacher_user.gg, 1):
+                                print(index, i)
+                                tmp[str(index)] = teacher_user.gg[i]
+                            C = input("请输入你的选择：")  # 根据不同的选择, 执行不同的函数
+                            func = getattr(teacher_user, tmp[C])
+                            func()
+                        # return
 
             else:
                 print('用户名或密码错误，请重新输入，您还有{}次机会'.format(3 - count))
                 count += 1
 
 login()
-# s = admin("zz")
-# tmp = {}
-# for index, i in enumerate(s.gongneng, 1):
-#     print(index, i)
-#     tmp[str(index)] = s.gongneng[i]
-# C = input("请输入你的选择")  # 根据不同的选择, 执行不同的函数
-# func = getattr(s, tmp[C])
-# func()
