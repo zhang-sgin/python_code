@@ -29,8 +29,8 @@ import re
 s1 = '1-2*(60+(-40.35/5)-(-4*3))'
 
 # print(re.findall('\d+', s1))
-print(re.findall('\d+\.?\d*' , s1))
-print(re.findall('-?\d+\.?\d*' , s1))
+# print(re.findall('\d+\.?\d*' , s1))
+# print(re.findall('-?\d+\.?\d*' , s1))
 
 
 
@@ -51,3 +51,24 @@ s2 ='''
 '''
 # 1,找到所有的p标签
 # print()
+import sys,os
+# print(sys.version)
+
+# print(os.getcwd())
+# os.makedirs('abc/cbd')
+# print(os.stat('/Users/baiduren/Desktop/python_code/day07-模块/test.py'))
+
+import time
+ft = time.strftime('%Y/%m/%d %H:%M:%S')
+st = time.strptime(ft,'%Y/%m/%d %H:%M:%S')
+print(st)
+
+t = time.mktime(st)
+print(t)
+
+t = time.time()
+st = time.localtime(t)
+print(st)
+
+ft = time.strftime('%Y/%m/%d %H:%M:%S',st)
+print(ft)
