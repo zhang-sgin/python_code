@@ -58,17 +58,17 @@ import sys,os
 # os.makedirs('abc/cbd')
 # print(os.stat('/Users/baiduren/Desktop/python_code/day07-模块/test.py'))
 
-import time
-ft = time.strftime('%Y/%m/%d %H:%M:%S')
-st = time.strptime(ft,'%Y/%m/%d %H:%M:%S')
-print(st)
-
-t = time.mktime(st)
-print(t)
-
-t = time.time()
-st = time.localtime(t)
-print(st)
-
-ft = time.strftime('%Y/%m/%d %H:%M:%S',st)
-print(ft)
+# import time
+# ft = time.strftime('%Y/%m/%d %H:%M:%S')
+# st = time.strptime(ft,'%Y/%m/%d %H:%M:%S')
+# print(st)
+#
+# t = time.mktime(st)
+# print(t)
+#
+# t = time.time()
+# st = time.localtime(t)
+# print(st)
+#
+# ft = time.strftime('%Y/%m/%d %H:%M:%S',st)
+# print(ft)
