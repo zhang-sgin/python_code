@@ -110,15 +110,43 @@ from time import sleep
 # ret = classroom_member.get(stu_name)
 # print(ret)
 
-classroom_member={"1班": ["sb"]}
-tmp = {'1': '1班', '2': '2班'}
-
-stu_name='gg'
-stu_choose_classroom = '1班'
+# classroom_member={"1班": ["sb"]}
+# tmp = {'1': '1班', '2': '2班'}
+#
+# stu_name='gg'
+# stu_choose_classroom = '1班'
 
 # print(tmp[stu_choose_classroom],[stu_name])
-print(classroom_member.get(stu_choose_classroom))
-classroom_member.get(stu_choose_classroom).append(stu_name)
+# print(classroom_member.get(stu_choose_classroom))
+# classroom_member.get(stu_choose_classroom).append(stu_name)
 # classroom_member.get(tmp[stu_choose_classroom]).append(stu_name)
 # classroom_member.setdefault(tmp[stu_choose_classroom], [stu_name])
-print(classroom_member)
+# print(classroom_member)
+
+
+print('from the tbjx.py')
+
+__all__ = ['name', 'read1', ]
+
+name = '太白金星'
+
+
+def read1():
+    print('tbjx模块：', name)
+
+
+def read2():
+    print('tbjx模块')
+    read1()
+
+
+def change():
+    global name
+    name = 'barry'
+
+
+if __name__ == '__main__':
+    # 在模块文件中测试read1()函数
+    # 此模块被导入时 __name__ == tbjx 所以不执行
+    read1()
+
