@@ -9,45 +9,65 @@ import re
 def count_small_keng(small):
     if '*' in small:
         num1,num2 = small.split('*')
-        return  str(float(num1)*float(num2))
+        return  str(float(num1) * float(num2))
     elif '/' in small:
         num1,num2 = small.split('/')
-        return  str(float(num1)/float(num2))
+        return  str(float(num1) / float(num2))
 
 def trim(exp):
-    exp = exp.replace('--','+')
-    exp = exp.replace('+-','-')
-    exp = exp.replace('-+','-')
-    exp = exp.replace('++','+')
+    exp = exp.replace('--', '+').replace('+-', '-').replace('-+', '-').replace('++', '+')
     return exp
     
 
 def wipe(son_keng):
     son_keng = son_keng.strip('()')
-    ret = re.search('\d+\.?\d*[*/]-?\d+\.?\d*', son_keng)
     while 1:
+        ret = re.search('\d+\.?\d*[*/]-?\d+\.?\d*', son_keng)
         if ret:
             small_keng = ret.group()
-            res = count_small_keng(small_keng)  # 乘除计算结果并返回结果
-            son_keng = son_keng.replace(small_keng, res,1)
+            res = count_small_keng(small_keng)
+            son_keng = son_keng.replace(small_keng, res, 1)
         else:
             break
     son_keng = trim(son_keng)
-    ret_list = re.findall('[+-]?\d+\.?\d*',son_keng)
+    res = re.findall('[+-]?\d+\.?\d*', son_keng)
     sum = 0
-    for i in ret_list:
+    for i in res:
         sum += float(i)
     return str(sum)
 
-    
-keng = "1 - 2 * ( (60-30 +(-40/5) * (9-2*5/3 + 7 /3*99/4*2998 +10 * 568/14 )) - (-4*3)/ (16-3*2) )".replace(' ','')
-while 1:
-    zz = re.search('\([^()]+\)', keng)
-    if zz:
-        son_keng = zz.group()
-        zz = wipe(son_keng)
-        keng = keng.replace(son_keng,zz,1)
-    else:
-        break
-    
-print('-----结果是：',keng)
+def day07(keng):
+    while 1:
+        zz = re.search('\([^()]+\)', keng)
+        if zz:
+            son_keng = zz.group()  # 子表达式
+            zz = wipe(son_keng)
+            express = keng.replace(son_keng, zz, 1)
+        else:
+            break
+    return keng
+
+def main(keng):
+    keng = keng.replace(' ','')
+    keng = day07(keng)
+    ret = wipe(keng)
+    print('计算结果：',ret)
+
+# if __name__ == '__main__':
+#     keng = "1 - 2 * ( (60-30 +(-40/5) * (9-2*5/3 + 7 /3*99/4*2998 +10 * 568/14 )) - (-4*3)/ (16-3*2) )"
+#     main(keng)
+
+if __name__ == '__main__':
+    print('输入计算的内容或输入Q退出'.center(30, '*'))
+    while 1:
+        keng = input('please enter: ')
+        if keng == 'Q' or keng == 'q':
+            break
+        elif '/0' in keng:
+            print('0不能为被除数')
+        elif keng.count('(') != keng.count(')') or '=' in keng:
+
+            print('表达式错误，请重新输入')
+        else:
+            main(keng)
+    print(eval(keng))
