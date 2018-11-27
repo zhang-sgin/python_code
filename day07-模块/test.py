@@ -72,3 +72,10 @@ import sys,os
 #
 # ft = time.strftime('%Y/%m/%d %H:%M:%S',st)
 # print(ft)
+
+
+import time
+time_now=time.mktime(time.strptime('2017-09-12 11:00:00','%Y-%m-%d %H:%M:%S'))
+print(time_now)
+old_time=time.mktime(time.strptime('1949-10-01 15:00:00','%Y-%m-%d %H:%M:%S'))
+print(old_time)
