@@ -21,7 +21,7 @@ def trim(exp):
 
 def wipe(son_keng):
     son_keng = son_keng.strip('()')
-    while 1:
+    while True:
         ret = re.search('\d+\.?\d*[*/]-?\d+\.?\d*', son_keng)
         if ret:
             small_keng = ret.group()
@@ -36,20 +36,20 @@ def wipe(son_keng):
         sum += float(i)
     return str(sum)
 
-def day07(keng):
-    while 1:
+def re_bracket(keng):
+    while True:
         zz = re.search('\([^()]+\)', keng)
         if zz:
             son_keng = zz.group()  # 子表达式
             zz = wipe(son_keng)
-            express = keng.replace(son_keng, zz, 1)
+            keng = keng.replace(son_keng, zz, 1)
         else:
             break
     return keng
 
 def main(keng):
     keng = keng.replace(' ','')
-    keng = day07(keng)
+    keng = re_bracket(keng)
     ret = wipe(keng)
     print('计算结果：',ret)
 
@@ -59,15 +59,15 @@ def main(keng):
 
 if __name__ == '__main__':
     print('输入计算的内容或输入Q退出'.center(30, '*'))
-    while 1:
+    while True:
         keng = input('please enter: ')
         if keng == 'Q' or keng == 'q':
             break
         elif '/0' in keng:
             print('0不能为被除数')
-        elif keng.count('(') != keng.count(')') or '=' in keng:
-
-            print('表达式错误，请重新输入')
         else:
             main(keng)
-    print(eval(keng))
+    # print(eval(keng))
+
+
+# 任务停在第一个-40/8这里无限循环，早上查一下为什么循环不往下走

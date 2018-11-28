@@ -1,6 +1,7 @@
 import time
-import os
+import os,sys
 import os.path
+import hashlib
 '''
 	1、计算两个格式化时间之间差了多少年月日时分秒
 '''
@@ -86,18 +87,25 @@ import os.path
 
 '''
 	7、校验两个文件的一致性
-
 '''
-
+# def count_md5(file):
+#     md5 = hashlib.md5()
+#     with open(file,encoding='utf-8')as f_1:
+#         for i in f_1:
+#             if i:
+#                 md5.update(i.encode('utf-8'))
+#     print(md5.hexdigest())
+# if __name__ == '__main__':
+#     file1 = input('请输入对比文件1：')
+#     file2 = input('请输入对比文件2：')
+#     count_md5(file1)
+#     count_md5(file2)
 
 '''
 	8、加盐的密文登陆
-
 '''
+print(hashlib.md5("salt".encode("utf8")))
 
 '''
 	9、完成一个既可以向文件输出又可以向屏幕输出的日志设置
 '''
-
-
-
