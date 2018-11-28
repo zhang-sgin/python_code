@@ -318,17 +318,3 @@ if __name__ == '__main__':
             # break
     print(eval(express))
 
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
-print('12312312')
