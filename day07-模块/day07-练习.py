@@ -2,8 +2,12 @@ import time
 import os,sys
 import os.path
 import hashlib
-import random
+import random,string
+import logging
+import logging.config
+
 '''
+
 	1、计算两个格式化时间之间差了多少年月日时分秒
 '''
 # def count_time():
@@ -105,31 +109,121 @@ import random
 '''
 	8、加盐的密文登陆
 '''
-md5 = hashlib.md5()
-md5.update('123'.encode('utf-8'))
+# md5 = hashlib.md5('12323414'.encode('utf-8'))
+# pwd = '123'
+# md5.update(pwd.encode('utf-8'))
 # print(md5.hexdigest())
 
-# for i in range(65,123):
-#     print (chr(i))
 
-def login():
-    count=1
-    while count < 4:
-        login_user_name=input('请输入您的用户名：')
-        login_password=input('请输入用户名密码：')
-        with open('user_info.txt',encoding='utf-8')as f_login:
-            for i in f_login:
-                login_line=i.strip().split(' ')
-                if login_user_name == login_line[0] and login_password == login_line[1]:
-                    print('登录成功')
-                    md5.update(login_password+'haha'.encode('utf-8'))
-                    with open('md5_user',encoding='utf-8',mode='r+')as f_md5:
-                        f_md5.write(login_user_name + '|' + login_password + '|'+'\n')
-                else:
-                    print('用户名或密码错误，请重新输入，您还有{}次机会'.format(3 - count))
-                    count+=1
-                break
-login()
+# def login():
+#     count=1
+#     salt='haha'
+#     while count < 4:
+#         login_user_name=input('请输入您的用户名：')
+#         login_password=input('请输入用户名密码：')
+#         ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 8)) # 生成8位随机字符串
+#         md5 = hashlib.md5(ran_str.encode('utf-8'))
+#         with open('user_info.txt',encoding='utf-8')as f_login:
+#             for i in f_login:
+#                 login_line=i.strip().split(' ')
+#                 if login_user_name == login_line[0] and login_password == login_line[1]:
+#                     print('登录成功')
+#                     md5.update(login_password.encode('utf-8'))
+#                     with open('md5_user',encoding='utf-8',mode='a')as f_md5:
+#                         f_md5.write(login_user_name + '|' + md5.hexdigest() + '|'+'\n')
+#                 else:
+#                     print('用户名或密码错误，请重新输入，您还有{}次机会'.format(3 - count))
+#                     count+=1
+#                 break
+# login()
 '''
 	9、完成一个既可以向文件输出又可以向屏幕输出的日志设置
 '''
+
+# logger = logging.getLogger()
+# fh = logging.FileHandler('test.log',encoding='utf-8')
+#
+# ch = logging.StreamHandler()
+# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# fh.setLevel(logging.DEBUG)
+#
+# fh.setFormatter(formatter)
+# ch.setFormatter(formatter)
+#
+# logger.addHandler(fh)
+# logger.addHandler(ch)
+#
+# logger.debug('logger debug message')
+# logger.info('logger info message')
+# logger.warning('logger warning message')
+# logger.error('logger error message')
+# logger.critical('logger critical message')
+
+
+
+# 定义三种日志输出格式 开始
+standard_format = '[%(asctime)s][%(threadName)s:%(thread)d][task_id:%(name)s][%(filename)s:%(lineno)d]' \
+                  '[%(levelname)s][%(message)s]' #其中name为getlogger指定的名字
+simple_format = '[%(levelname)s][%(asctime)s][%(filename)s:%(lineno)d]%(message)s'
+id_simple_format = '[%(levelname)s][%(asctime)s] %(message)s'
+
+# 定义日志输出格式 结束
+logfile_dir = os.path.dirname(os.path.abspath(__file__))  # log文件的目录
+logfile_name = 'zz-test.log'  # log文件名
+
+# 如果不存在定义的日志目录就创建一个
+if not os.path.isdir(logfile_dir):
+    os.mkdir(logfile_dir)
+
+# log文件的全路径
+logfile_path = os.path.join(logfile_dir, logfile_name)
+
+# log配置字典
+LOGGING_DIC = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'standard': {
+            'format': standard_format
+        },
+        'simple': {
+            'format': simple_format
+        },
+    },
+    'filters': {},
+    'handlers': {
+        #打印到终端的日志
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',  # 打印到屏幕
+            'formatter': 'simple'
+        },
+        #打印到文件的日志,收集info及以上的日志
+        'default': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',  # 保存到文件
+            'formatter': 'standard',
+            'filename': logfile_path,  # 日志文件
+            'maxBytes': 1024*1024*5,  # 日志大小 5M
+            'backupCount': 5,
+            'encoding': 'utf-8',  # 日志文件的编码，再也不用担心中文log乱码了
+        },
+    },
+    'loggers': {
+        #logging.getLogger(__name__)拿到的logger配置
+        '': {
+            'handlers': ['default', 'console'],  # 这里把上面定义的两个handler都加上，即log数据既写入文件又打印到屏幕
+            'level': 'DEBUG',
+            'propagate': True,  # 向上（更高level的logger）传递
+        },
+    },
+}
+
+
+def load_my_logging_cfg():
+    logging.config.dictConfig(LOGGING_DIC)  # 导入上面定义的logging配置
+    logger = logging.getLogger(__name__)  # 生成一个log实例
+    logger.info('hahahahahahhsb')  # 记录该文件的运行状态
+
+if __name__ == '__main__':
+    load_my_logging_cfg()
