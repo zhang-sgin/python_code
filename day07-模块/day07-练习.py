@@ -2,6 +2,7 @@ import time
 import os,sys
 import os.path
 import hashlib
+import random
 '''
 	1、计算两个格式化时间之间差了多少年月日时分秒
 '''
@@ -104,8 +105,31 @@ import hashlib
 '''
 	8、加盐的密文登陆
 '''
-print(hashlib.md5("salt".encode("utf8")))
+md5 = hashlib.md5()
+md5.update('123'.encode('utf-8'))
+# print(md5.hexdigest())
 
+# for i in range(65,123):
+#     print (chr(i))
+
+def login():
+    count=1
+    while count < 4:
+        login_user_name=input('请输入您的用户名：')
+        login_password=input('请输入用户名密码：')
+        with open('user_info.txt',encoding='utf-8')as f_login:
+            for i in f_login:
+                login_line=i.strip().split(' ')
+                if login_user_name == login_line[0] and login_password == login_line[1]:
+                    print('登录成功')
+                    md5.update(login_password+'haha'.encode('utf-8'))
+                    with open('md5_user',encoding='utf-8',mode='r+')as f_md5:
+                        f_md5.write(login_user_name + '|' + login_password + '|'+'\n')
+                else:
+                    print('用户名或密码错误，请重新输入，您还有{}次机会'.format(3 - count))
+                    count+=1
+                break
+login()
 '''
 	9、完成一个既可以向文件输出又可以向屏幕输出的日志设置
 '''
