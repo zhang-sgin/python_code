@@ -21,6 +21,7 @@ while 1:
         res = res + data
         data_size = data_size + len(data)
     
-    print(res.decode('utf-8'))
+    # print(res.decode('utf-8'))
+    print(res.decode('gbk'))
 
 phone.close()

@@ -10,6 +10,7 @@ while 1:
     phone.send(msg.encode('utf-8'))
     
     server_data = phone.recv(1024)
-    print(server_data.decode('utf-8'))
+    # print(server_data.decode('utf-8'))
+    print(server_data.decode('gbk'))
 
 phone.close()
