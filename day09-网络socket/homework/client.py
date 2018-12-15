@@ -1,40 +1,35 @@
-import os
+import re
+import os,sys,time
 import json
 import socket
+import subprocess
 import struct
-import re
+import socketserver
+import hashlib
+
 
 FTP_CLIENT = socket.socket()
 FTP_CLIENT.connect(('127.0.0.1',8080))
 
 while 1:
-    # msg = input('>>>')
     msg = 'E:\python24\office.ISO'
     if  msg.upper() == 'Q': break
 
-    msg_size = os.path.getsize(msg)
-    msg_name = re.findall('\w*[.]\w*', msg)
-    file_dict={'file_name':msg_name,'file_size':msg_size}
-    file_info = 'send|%s|%smb' % (msg_name, msg_size)
-    file_dict_json = json.dumps(file_info)
-    FTP_CLIENT.send(file_dict_json.encode('utf-8'))
+    msg_size = os.path.getsize(msg)     # 获得文件大小
+    msg_name = re.findall('\w*[.]\w*', msg)     # 取出文件名
+    msg_name = 'new' + msg_name[0]
+    file_dict={'file_name':msg_name,'file_size':msg_size}   # 文件信息封装为字典
 
-    head_bytes = FTP_CLIENT.recv(4)
-    total_size = struct.unpack('i',head_bytes)[0]
+    head_info = json.dumps(file_dict)  # 转换为json字符串
+    head_info_len = struct.pack('i',len(head_info)) # 字符串长度打包
 
-    data_size = 0
-    res = b''
+    FTP_CLIENT.sendall(head_info_len)   # 发送head_info长度
+    FTP_CLIENT.sendall(head_info.encode('utf-8'))   # 发送文件信息
+
     with open(msg,'rb')as f_msg:
-        msg_data = f_msg.read(1024)
-        FTP_CLIENT.sendall(msg_data)
-
-        while data_size < total_size:
-            data = FTP_CLIENT.recv(1024)
-            res = res + data
-            data_size = data_size + len(data)
-
-
-
-        print(res.decode('gbk'))
+        data = f_msg.read()
+        FTP_CLIENT.sendall(data)
+    print('%s文件发送完成' % msg)
 
 FTP_CLIENT.close()
+
