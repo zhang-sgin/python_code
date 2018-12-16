@@ -21,15 +21,15 @@ while 1:
     file_dict={'file_name':msg_name,'file_size':msg_size}   # 文件信息封装为字典
 
     head_info = json.dumps(file_dict)  # 转换为json字符串
-    head_info_len = struct.pack('i',len(head_info)) # 字符串长度打包
+    head_info_len = struct.pack('h',len(head_info),) # 字符串长度打包
 
-    FTP_CLIENT.sendall(head_info_len)   # 发送head_info长度
-    FTP_CLIENT.sendall(head_info.encode('utf-8'))   # 发送文件信息
+    FTP_CLIENT.send(head_info_len)   # 发送head_info长度
+    FTP_CLIENT.send(head_info.encode('utf-8'))   # 发送文件信息
 
     with open(msg,'rb')as f_msg:
         data = f_msg.read()
-        FTP_CLIENT.sendall(data)
+        FTP_CLIENT.send(data)
     print('%s文件发送完成' % msg)
-
+    break
 FTP_CLIENT.close()
 

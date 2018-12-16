@@ -128,10 +128,13 @@ def process_bar(precent, width=50):
 
 class FTP_SERVER(socketserver.BaseRequestHandler):
     def handle(self):
-        clinet_head = self.request.recv(2)
+        # clinet_head = self.request.recv(2) # 上传文件
+        clinet_head = self.request.recv(1024)
         print(clinet_head,type(clinet_head))
         if clinet_head: print('已连接')
+
         clinet_head_len = struct.unpack('h', clinet_head)[0]
+        print(clinet_head_len)
         clinet_data = self.request.recv(clinet_head_len)
         head = json.loads(clinet_data.decode('utf-8'))
 
