@@ -12,7 +12,7 @@ FTP_CLIENT = socket.socket()
 FTP_CLIENT.connect(('127.0.0.1',8080))
 
 while 1:
-    msg = 'E:\python24\office.ISO'
+    msg = 'D:\\baidu.exe'
     if  msg.upper() == 'Q': break
 
     msg_size = os.path.getsize(msg)     # 获得文件大小
