@@ -5,7 +5,7 @@ import subprocess
 import struct
 import socketserver
 import hashlib
-
+import re
 
 # def process_bar(precent, width=50):
 #     use_num = int(precent*width)
@@ -145,6 +145,15 @@ class FTP_SERVER(socketserver.BaseRequestHandler):
         self.request.send(correct_msg)
         self.request.send(error_msg)
 
+    def quota_count(self,file_size,quota):
+        nums = []
+        with open('quota', 'r') as f:
+            for s in re.findall(r'\d+', f.read()):
+                nums.append(float(s))
+        z = (sum(nums))
+        # print(sum(nums))
+        return z
+
     def post_file(self,*args,**kwargs):
         # clinet_head = self.request.recv(2)  # 上传文件
         # print(clinet_head, type(clinet_head))
@@ -155,7 +164,7 @@ class FTP_SERVER(socketserver.BaseRequestHandler):
         # clinet_data = self.request.recv(clinet_head_len)
         # print(clinet_data)
         # head = json.loads(clinet_data.decode('utf-8'))
-
+        quota = 1348576000
         clinet_head = self.request.recv(4)  # 上传文件
         print(clinet_head, type(clinet_head))
         if clinet_head: print('post_file已连接')
@@ -163,30 +172,44 @@ class FTP_SERVER(socketserver.BaseRequestHandler):
         clinet_head_len = struct.unpack('i', clinet_head)[0]
         print(clinet_head_len,type(clinet_head_len))
         clinet_data = self.request.recv(clinet_head_len)
-        print(clinet_data)
+        # print(clinet_data)
         head = json.loads(clinet_data.decode('utf-8'))
         print(head)
+        post_file_size=head.get('file_size')
+        print(post_file_size,type(post_file_size))
 
-        data_size = 0
-        res = b''
-        old = time.time()
-        with open(head['file_name'], 'wb')as f_file:
-            while data_size < head['file_size']:
-                percent = data_size / head['file_size']
-                process_bar(percent)
-                if head['file_size'] - data_size >= 1024:
-                    res = self.request.recv(1024)
-                    f_file.write(res)
-                    data_size += len(res)
-                else:
-                    res = self.request.recv(head['file_size'] - data_size)
-                    data_size += len(res)
-                    f_file.write(res)
-                    break
-        print(data_size, head['file_size'])
-        now = time.time()
-        stamp = int(now - old)
-        print('总共用时%ds' % stamp)
+        quota_size =  self.quota_count(post_file_size,quota)
+        if quota_size < quota:
+            data_size = 0
+            res = b''
+            old = time.time()
+            with open(head['file_name'], 'wb')as f_file:
+                while data_size < head['file_size']:
+                    percent = data_size / head['file_size']
+                    process_bar(percent)
+                    if head['file_size'] - data_size >= 1024:
+                        res = self.request.recv(1024)
+                        f_file.write(res)
+                        data_size += len(res)
+                    else:
+                        res = self.request.recv(head['file_size'] - data_size)
+                        data_size += len(res)
+                        f_file.write(res)
+                        break
+            reset=(data_size, head['file_size'])
+            print(reset)
+            now = time.time()
+            stamp = int(now - old)
+            ok_reset = json.dumps('ok')
+            self.request.sendall(ok_reset.encode('utf-8'))
+            print('总共用时%ds' % stamp)
+            with open('quota', encoding='utf-8',mode='r+')as f_quota:
+                post_file_size=str(post_file_size)
+                f_quota.write('a'+post_file_size)
+        else:
+            print('文件太大啦，限额不足')
+            fail_reset = json.dumps('fail')
+            self.request.sendall(fail_reset.encode('utf-8'))
 
     def handle(self):
         clinet_head = self.request.recv(4)  # 上传文件
@@ -196,22 +219,25 @@ class FTP_SERVER(socketserver.BaseRequestHandler):
         clinet_head_len = struct.unpack('i', clinet_head)[0]
         print(clinet_head_len,type(clinet_head_len))
         clinet_data = self.request.recv(clinet_head_len)
-        # print(clinet_data)
         head = json.loads(clinet_data.decode('utf-8'))
-        value=head.get('action')
-        # print(head,type(head))
-        if hasattr(self, value):
-            getattr(self, value)(value)
-
-    # def handle(self):
-    #     while 1:
-    #         data_msg = self.recv_msg()
-    #         print('handle')
-    #         print(data_msg)
-    #         if hasattr(self, '%s' % data_msg['action']):
-    #             getattr(self, '%s' % data_msg['action'])(data_msg)
-
-
+        print(head)
+        if ('name') in head.keys():
+            name=head.get('name')
+            pwd = head.get('pwd')
+            with open('user', encoding='utf8')as f_registry:
+                for i in f_registry:
+                    login_line = i.strip().split('|')
+                    if name == login_line[0] and pwd == login_line[1]:  # zz 123
+                        ok_reset=json.dumps('ok')
+                        self.request.sendall(ok_reset.encode('utf-8'))
+                    else:
+                        fail_reset=json.dumps('fail')
+                        self.request.sendall(fail_reset.encode('utf-8'))
+        elif ('action') in head.keys():
+            value=head.get('action')
+            # print(head,type(head))
+            if hasattr(self, value):
+                getattr(self, value)(value)
 
 server=socketserver.ThreadingTCPServer(("127.0.0.1",8080),FTP_SERVER)
 server.serve_forever()
