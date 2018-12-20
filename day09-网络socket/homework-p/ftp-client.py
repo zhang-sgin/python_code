@@ -7,6 +7,7 @@ import struct
 import socketserver
 import hashlib
 from db import *
+import random,string
 
 
 class client:
@@ -44,6 +45,7 @@ class client:
             res = b''
             while data_size < total_size:
                 data = cmd_client.recv(1024)
+                print(data)
                 res = res + data
                 data_size = data_size + len(data)
 
@@ -71,32 +73,42 @@ class client:
             FTP_CLIENT.send(head_info_len)  # 发送head_info长度
             FTP_CLIENT.send(head_info.encode('utf-8'))  # 发送文件信息
 
-            # post_file_status = obj.recv(1024)
-            # print(post_file_status)
-            # status = json.loads(post_file_status.decode('utf-8'))
-            # print(status)
-
             with open(msg, 'rb')as f_msg:
                 data = f_msg.read()
                 FTP_CLIENT.send(data)
-                # post_file_status = obj.recv(1024)
-                # print(post_file_status)
-                # status = json.loads(post_file_status.decode('utf-8'))
-                # print(status)
-                print('发送%s文件完成' % msg)
-            break
+                post_status = obj.recv(1024)
+                print(post_status)
+                if post_status == 'ok':
+                    print('发送%s文件完成' % msg)
+                    break
+                else:
+                    print('发送%s文件失败' % msg)
+                    break
+
+            # post_status = obj.recv(1024)
+            # print(post_status)
+            # status = json.loads(post_status.decode('utf-8'))
+            # print(status)
+            # break
         FTP_CLIENT.close()
 
     def get_file(self):
         print('get_file')
 
+def md5(username,pwd):
+    md5 = hashlib.md5('zhangz-l'.encode('utf-8'))
+    md5.update(pwd.encode('utf-8'))
+    return md5.hexdigest()
+
 def login(username,pwd):
-    user_dict = {'name':username,'pwd':pwd}
+    md5_pwd =  md5(usrname,pwd)
+    user_dict = {'name':username,'pwd':md5_pwd}
     user_dict_json = json.dumps(user_dict)   # 转换为json字符串
     user_head = struct.pack('i', len(user_dict_json))    # 字符串长度打包
     obj.send(user_head)  # 发送user_info长度
     obj.send(user_dict_json.encode('utf-8'))  # 发送文件信息
     login_status=obj.recv(1024)
+    print(login_status)
     head = json.loads(login_status.decode('utf-8'))
     if head == 'ok':
         print('用户%s登录成功' % username)
