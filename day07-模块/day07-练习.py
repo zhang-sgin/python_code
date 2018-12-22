@@ -109,33 +109,33 @@ import logging.config
 '''
 	8、加盐的密文登陆
 '''
-# md5 = hashlib.md5('12323414'.encode('utf-8'))
-# pwd = '123'
-# md5.update(pwd.encode('utf-8'))
-# print(md5.hexdigest())
+md5 = hashlib.md5('12323414'.encode('utf-8'))
+pwd = '123'
+md5.update(pwd.encode('utf-8'))
+print(md5.hexdigest())
 
 
-# def login():
-#     count=1
-#     salt='haha'
-#     while count < 4:
-#         login_user_name=input('请输入您的用户名：')
-#         login_password=input('请输入用户名密码：')
-#         ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 8)) # 生成8位随机字符串
-#         md5 = hashlib.md5(ran_str.encode('utf-8'))
-#         with open('user_info.txt',encoding='utf-8')as f_login:
-#             for i in f_login:
-#                 login_line=i.strip().split(' ')
-#                 if login_user_name == login_line[0] and login_password == login_line[1]:
-#                     print('登录成功')
-#                     md5.update(login_password.encode('utf-8'))
-#                     with open('md5_user',encoding='utf-8',mode='a')as f_md5:
-#                         f_md5.write(login_user_name + '|' + md5.hexdigest() + '|'+'\n')
-#                 else:
-#                     print('用户名或密码错误，请重新输入，您还有{}次机会'.format(3 - count))
-#                     count+=1
-#                 break
-# login()
+def login():
+    count=1
+    salt='haha'
+    while count < 4:
+        login_user_name=input('请输入您的用户名：')
+        login_password=input('请输入用户名密码：')
+        ran_str = ''.join(random.sample(string.ascii_letters + string.digits, 8)) # 生成8位随机字符串
+        md5 = hashlib.md5(ran_str.encode('utf-8'))
+        with open('user_info.txt',encoding='utf-8')as f_login:
+            for i in f_login:
+                login_line=i.strip().split(' ')
+                if login_user_name == login_line[0] and login_password == login_line[1]:
+                    print('登录成功')
+                    md5.update(login_password.encode('utf-8'))
+                    with open('md5_user',encoding='utf-8',mode='a')as f_md5:
+                        f_md5.write(login_user_name + '|' + md5.hexdigest() + '|'+'\n')
+                else:
+                    print('用户名或密码错误，请重新输入，您还有{}次机会'.format(3 - count))
+                    count+=1
+                break
+login()
 '''
 	9、完成一个既可以向文件输出又可以向屏幕输出的日志设置
 '''
