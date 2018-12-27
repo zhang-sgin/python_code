@@ -224,20 +224,3 @@ if __name__ == '__main__':
     login(username,password)
 
 
-
-#
-# if __name__ == '__main__':
-#     # ssh_host=input('请输入远程地址：')
-#     # ssh_port=input('请输入远程端口：')
-#     # ssh_user=input('请输入远程用户：')
-#     # ssh_paas=input('请输入远程密码：')
-#     while True:
-#         cmd_input=input('>>>:')
-#         ssh =parmikoclient()
-#         ssh.run_ssh(cmd_input)
-#         if cmd_input == 'quit':
-#             ssh.close()
-
-
-
-
