@@ -103,3 +103,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 day03-函数/day03-练习题.py
+day11-sql/test.py
+day11-sql/test.py
