@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta http-equiv="content-Type" charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册</title>
+    <style>
+       .title a{
+            color: #888;
+            text-decoration:none;
+            font-size: 20px;
+            border-left:1px solid #888;
+            line-height: 40px;
+            padding-left: 10px;
+            box-sizing: border-box;
+
+        }
+        span{
+            color: #757575;
+        }
+        .title{
+            height: 70px;
+            line-height: 85px;
+            margin-left: 4px;
+        }
+        .top_l{
+            display: flex;
+
+        }
+        #topBar{
+            width: 500px;
+            margin: 0 auto;
+        }
+        .info{
+            float: left;
+            width: 320px;
+            height: 16px;
+            padding: 11px 10px;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #666666;
+
+        }
+        .auth{
+            float: left;
+            height: 38px;
+            width: 156px;
+            padding: 0 11px;
+        }
+        .auth_code{
+            float: left;
+            height: 40px;
+            color: #666;
+            width: 154px;
+            font-size: 14px;
+        }
+        .head{
+            color: #666;
+            width: 50px;
+            height: 30px;
+        }
+        .lable{
+            float: left;
+            width: 65px;
+            height: 42px;
+            line-height: 42px;
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+       .zhuce {
+           width: 98%;
+           height: 50px;
+           background-color: rgb(63, 137, 236);
+           text-align: center;
+           line-height: 50px;
+           color: white;
+           font-weight: bold;
+           border-radius: 3px;
+       }
+        .tr_hei{
+            height: 55px;
+            /*margin-bottom: 20px;*/
+        }
+        .box_1{
+            margin-bottom: 10px;
+        }
+        .box_2{
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<!--头部-->
+<body>
+<div id="topBar">
+    <div class="box_1">
+        <div class="top_l">
+
+             <a href="http://www.baidu.com">
+            <img src="\python24\python_code\day12-html\images\百度图标.png" alt="注册百度账号">
+                </a>
+            <div class="title">
+                 <a href="http://www.baidu.com">注册百度账号</a>
+            </div>
+
+        </div>
+
+        <div class="box_2">
+             <table class="head">
+                <tr class="tr_hei">
+                    <td><label for="name" class="lable">用户名</label></td>
+                    <td><input class="info" type="text" id="name" value placeholder="请设置用户名"></td>
+                </tr>
+                 <tr class="tr_hei">
+                    <td><label for="name" class="lable">性别</label></td>
+                      <td>
+                          <input type="radio" name="radioSex" value="男">男
+                          <input type="radio" name="radioSex" value="女">女
+                      </td>
+                </tr>
+                  <tr class="tr_hei">
+                    <td><label for="name" class="lable">爱好</label></td>
+                     <td>
+                          <input type="checkbox" name="checkbox_1" value="男">男
+                          <input type="checkbox" name="checkbox_2" value="女">女
+                      </td>
+                </tr>
+                <tr class="tr_hei">
+                    <td><label for="pass" class="lable">密码</label></td>
+                    <td><input class="info" type="text" id="pass"  value placeholder="请设置密码"></td>
+                </tr>
+                   <tr class="tr_hei">
+                    <td><label for="pass" class="lable">确认密码</label></td>
+                    <td><input class="info" type="text" id="pass_again"  value placeholder="请再次设置密码"></td>
+                </tr>
+
+                 <tr class="tr_hei">
+                    <td><label for="phone_nnumber" class="lable">手机号</label></td>
+                    <td><input class="info" type="text" id="phone_nnumber"  value placeholder="可用于登陆和找回密码"></td>
+                </tr>
+                <tr class="tr_hei">
+                    <td><label for="auth_code" class="lable">验证码</label></td>
+                    <td><input class="auth" type="text" id="auth_code" style="margin-right: 8px" value placeholder="请输入验证码"><input type="button" class="auth_code" id="btn" value="获取短信验证码"></td>
+                </tr>
+                 <tr class="tr_hei">
+                     <td></td>
+                     <td tyle="text-align: left"><input type="checkbox"> <span style="font-size: 12px;">阅读并接受 <a href="https://passport.baidu.com/static/passpc-account/html/protocal.html">《百度用户协议》</a>及 <a href="https://www.baidu.com/duty/yinsiquan.html">《百度隐私权保护声明》</a></span></td>
+                 </tr>
+                 <tr >
+                     <td></td>
+                     <td><div class="zhuce">注册</div></td>
+                 </tr>
+            </table>
+
+        </div>
+</div>
+    
+</body>
+</html>

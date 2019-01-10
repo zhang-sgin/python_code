@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta http-equiv="content-Type" charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>就叫这名字，咋的？</title>
+    <style>
+       .title a{
+            color: #888;
+            text-decoration:none;
+            font-size: 20px;
+            border-left:1px solid #888;
+            line-height: 40px;
+            padding-left: 10px;
+            box-sizing: border-box;
+
+        }
+        span{
+            color: #757575;
+        }
+        .title{
+            height: 70px;
+            line-height: 85px;
+            margin-left: 4px;
+        }
+        .top_l{
+            display: flex;
+
+        }
+        #topBar{
+            width: 500px;
+            margin: 0 auto;
+        }
+        .info{
+            float: left;
+            width: 320px;
+            height: 16px;
+            padding: 11px 10px;
+            margin-right: 10px;
+            font-size: 14px;
+            color: #666666;
+
+        }
+        .auth{
+            float: left;
+            height: 38px;
+            width: 156px;
+            padding: 0 11px;
+        }
+        .head{
+            color: #666;
+            width: 50px;
+            height: 30px;
+        }
+        .lable{
+            float: left;
+            width: 65px;
+            height: 42px;
+            line-height: 42px;
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+       .login {
+           width: 48%;
+           height: 50px;
+           background-color: rgb(63, 137, 236);
+           text-align: center;
+           line-height: 50px;
+           color: white;
+           font-weight: bold;
+           border-radius: 3px;
+           float: left;
+           font-size: 14px;
+       }
+        .tr_hei{
+            height: 55px;
+        }
+        .box_1{
+            margin-bottom: 10px;
+        }
+        .box_2{
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<!--头部-->
+<body>
+<div id="topBar">
+    <div class="box_1">
+        <div class="top_l">
+
+             <a href="http://www.baidu.com">
+            <img src="\python24\python_code\day12-html\images\百度图标.png" alt="注册百度账号">
+                </a>
+            <div class="title">
+                 <a href="http://www.baidu.com">登陆百度账号</a>
+            </div>
+
+        </div>
+
+        <div class="box_2">
+             <table class="head">
+                <tr class="tr_hei">
+                    <td><label for="name" class="lable">用户名</label></td>
+                    <td><input class="info" type="text" id="name" value placeholder="请设置用户名"></td>
+                </tr>
+                <tr class="tr_hei">
+                    <td><label for="pass" class="lable">密码</label></td>
+                    <td><input class="info" type="text" id="pass"  value placeholder="请设置密码"></td>
+                </tr>
+                 <tr >
+                     <td></td>
+                     <td><input type="button" class="login"  value="登陆"><input type="button" class="login"  value="注册"><a
+                             href="day12-homework-regs.html"></a></td>
+
+                 </tr>
+            </table>
+
+        </div>
+</div>
+    
+</body>
+</html>

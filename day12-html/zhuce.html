@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注册页面</title>
+    <style>
+        input{
+            margin: 7px 0 ;
+        }
+        .sk {
+            width: 328px;
+            height: 38px;
+            padding: 0 11px;
+        }
+        a{
+            text-decoration: none
+        }
+        .xk {
+            height: 38px;
+            width: 45%;
+            padding: 0 11px;
+        }
+
+        td {
+            text-align: right;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        #zuce {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(63,137,236);
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+
+
+        }
+    </style>
+</head>
+<body>
+<!-- 表单头部 -->
+<div><img src="bd_logo1.png" alt="logo" width="137px" height="46px">| <span>注册百度账号</span></div>
+<hr>
+<div>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="name">用户名</label></td>
+                <td><input class="sk" type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="shouji">手机号</label></td>
+                <td><input class="sk" type="text" id="shouji"></td>
+            </tr>
+            <tr>
+                <td><label for="mima">密码</label></td>
+                <td><input class="sk" type="text" id="mima"></td>
+            </tr>
+            <tr>
+                <td><label for="yanzhengma">验证码</label></td>
+                <td style="text-align: left"><input class="xk" type="text" id="yanzhengma" style="margin-right: 8px"><input type="button" class="xk" id="btn" value="获取短信验证码"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="text-align: left"><input type="radio"> <span style="font-size: 12px;">阅读并接受 <a href="">《百度用户协议》</a>及 <a href="">《百度隐私权保护声明》</a></span></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td><div id="zuce">注册</div></td>
+
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
