@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商城</title>
+</head>
+<style>
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike,
+    strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+    tfoot, thead, tr, th, td, textarea, input {
+        margin: 0;
+        padding: 0;
+    }
+
+    address, cite, dfn, em, var, i {
+        font-style: normal;
+    }
+
+    body {
+        line-height: 1.5;
+        font-family: 'Microsoft Yahei', 'simsun', 'arial', 'tahoma';
+        background: #eee;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6, th {
+        font-size: 100%;
+        font-weight: normal;
+    }
+
+    button, input, select, textarea {
+        font-size: 100%;
+    }
+
+    fieldset, img {
+        border: 0;
+    }
+
+    a {
+        text-decoration: none;
+        background: none
+    }
+
+    ul, ol {
+        list-style: none;
+    }
+
+    :focus {
+        outline: none;
+    }
+
+    .header {
+        width: 100%;
+        background: #000;
+        color: #fff;
+    }
+
+    .header-a {
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+        height: 30px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .header-a a {
+        color: #fff;
+    }
+
+    .header-left {
+        flex: 1;
+    }
+
+    .header-right {
+        width: 200px;
+    }
+
+    .main {
+        width: 100%;
+        background: #fff;
+    }
+
+    .main-list {
+        margin: 0 auto;
+        height: 1000px;
+        width: 85%;
+    }
+
+    .main-header-logo {
+        width: 62px;
+        height: 62px;
+        margin-top: 22px;
+        background: #ff6700;
+    }
+
+    .wrapper {
+        background: #fff;
+    }
+
+    .main-header-logo {
+        text-align: center;
+    }
+
+    .main-header-logo img {
+        width: 100%;
+    }
+
+    .main-list-header {
+        display: flex;
+    }
+
+    .main-header-nianhuo {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .main-list-link {
+        margin-top: 20px;
+        margin-left: 15px;
+        display: flex;
+    }
+
+    .main-list-link a {
+        display: block;
+        padding: 0 5px;
+        line-height: 70px;
+    }
+
+    .main-header-input {
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .main-header-input input {
+        width: 200px;
+        height: 48px;
+    }
+
+    .main-list-slider {
+        height: 480px;
+        background: #0ff;
+        display: flex;
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+    }
+    .main-list-slider img{
+        width: 100%;
+        height: 100%;
+    }
+    .list-slider{
+        width: 234px;
+        height: 100%;
+        background: #0f0f0f;
+        position: absolute;
+        opacity: .7;
+        z-index: 222;
+    }
+    .list-slider ul{
+        padding-top: 40px;
+        box-sizing: border-box;
+
+        color: #fff;
+        position: relative;
+        z-index: 10000;
+    }
+    .list-slider ul li{
+        height: 42px;
+        padding-left: 40px;
+        line-height: 42px;
+        cursor: pointer;
+    }
+    .list-slider ul li:hover{
+        background: #ff6700;
+    }
+
+    .list-banner img{
+        width: 100%;
+        height: 100%;
+    }
+    .list-title{
+        display: flex;
+        height: 170px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .title{
+        width: 234px;
+        background: #5f5750;
+        display: flex;
+        flex-direction: column;
+    }
+    .title div{
+        flex: 1;
+        display: flex;
+        height: 85px;
+        line-height: 85px;
+        text-align: center;
+        padding-left: 3px;
+        box-sizing: border-box;
+        color: rgba(255,255,255,0.7);
+    }
+    .title1{
+        flex: 1;
+        display: flex;
+    }
+    .title1 div{
+        flex: 1;
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+    .title1 div img{
+        width: 330px;
+        height: 170px;
+    }
+</style>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="header-a">
+            <div class="header-left">
+                <a>小米商城</a>
+                <a>小米商城</a>
+                <a>小米商城</a>
+                <a>小米商城</a>
+                <a>小米商城</a>
+                <a>小米商城</a>
+                <a>小米商城</a>
+                <a>小米商城</a>
+                <a>小米商城</a>
+                <a>小米商城</a>
+            </div>
+            <div class="top_shop">
+                <a href="">购物车(<span class="shopCount">0</span>)
+                </a>
+            </div>
+            <div class="top_login">
+                <a href="">登录</a>
+                <span class="sep">|</span>
+                <a href="">注册</a>
+                <span class="sep">|</span>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="main">
+        <div class="main-list">
+            <div class="main-list-header">
+                <div class='main-header-logo'>
+                    <img src="images/mi-logo.png">
+                </div>
+                <div class="main-header-nianhuo">
+                    <img src="images/nianhuojie.gif">
+                </div>
+                <div class="main-list-link">
+                    <a>小米手机</a>
+                    <a>小米手机</a>
+                    <a>小米手机</a>
+                    <a>小米手机</a>
+                    <a>小米手机</a>
+                    <a>小米手机</a>
+                    <a>小米手机</a>
+                </div>
+                <div class="main-header-input">
+                    <input type="text" placeholder="">
+                    <div>
+                        <!--<img src="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="main-list-slider">
+                <div class="list-slider">
+                    <ul>
+                        <li>手机   电话卡</li>
+                        <li>手机   电话卡</li>
+                        <li>手机   电话卡</li>
+                        <li>手机   电话卡</li>
+                        <li>手机   电话卡</li>
+                        <li>手机   电话卡</li>
+                        <li>手机   电话卡</li>
+                        <li>手机   电话卡</li>
+                        <li>手机   电话卡</li>
+                        <li>手机   电话卡</li>
+                    </ul>
+
+                </div>
+                <img src="images/banner.jpg" />
+            </div>
+
+            <div class="list-title">
+                <div class="title">
+                    <div class="title-header">
+                        <div>选购手机</div>
+                        <div>选购手机</div>
+                        <div>选购手机</div>
+                    </div>
+                    <div class="title-header">
+                        <div>选购手机</div>
+                        <div>选购手机</div>
+                        <div>选购手机</div>
+                    </div>
+                </div>
+
+                <div class="title1">
+                    <div>
+                        <img src="images/xmad_15381015124677_QcEGp.jpg">
+                    </div>
+                    <div>
+                        <img src="images/xmad_15381015124677_QcEGp.jpg">
+                    </div>
+                    <div>
+                        <img src="images/xmad_15381015124677_QcEGp.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

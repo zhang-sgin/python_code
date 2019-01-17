@@ -1,0 +1,347 @@
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta http-equiv="content-Type" charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>小米商城</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            /*选中 div  id topBar  用#*/
+
+            /*id选择器*/
+            #topBar {
+                background-color: #333;
+                height: 40px;
+                line-height: 40px;
+                font-size: 12px;
+                position: relative;
+                z-index: 30;
+                color: #b0b0b0;
+            }
+
+            /*类选择器*/
+            .container {
+                width: 1226px;
+                height: 100%;
+                margin: 0 auto;
+            }
+
+            /*标签选择器*/
+            a {
+                color: #b0b0b0;
+                text-decoration: none;
+            }
+
+            #topBar a:hover {
+                color: #fff;
+                background-color: #ff6700;
+            }
+
+            .sep {
+                color: #424242;
+                margin: 0 .5em;
+            }
+
+            .top_l {
+                float: left;
+                height: 40px;
+
+            }
+
+            .top_shop {
+                height: 40px;
+                float: right;
+            }
+
+            .header {
+                width: 100%;
+                height: 100px;
+            }
+
+            .header .logo {
+                width: 62px;
+                float: left;
+                margin-top: 20px;
+            }
+
+            .logo a {
+                display: block;
+                width: 56px;
+                height: 56px;
+            }
+
+            .logo a img {
+                width: 56px;
+                height: 56px;
+            }
+
+            .header .nav-header {
+                float: left;
+                width: 850px;
+            }
+
+            .header ul {
+                padding-top: 20px;
+                padding-left: 10px;
+                height: 80px;
+
+            }
+
+            .header ul li {
+                float: left;
+
+            }
+
+            .header ul li.nav-category a {
+                display: block;
+                /*position: absolute;*/
+                left: 69px;
+                bottom: 0;
+                z-index: 21;
+                width: 165px;
+                height: 100px;
+                /*text-indent: -9999em;*/
+            }
+
+            .header ul li.item a {
+                display: block;
+                padding: 26px 10px 38px;
+                color: #333333;
+                font-size: 16px;
+
+            }
+
+            .header form {
+                float: right;
+                width: 260px;
+                margin-top: 25px;
+                position: relative;
+            }
+
+            .header form input {
+                border: none;
+                outline: none;
+            }
+
+            .header form input[type=text] {
+                border: 1px solid #e0e0e0;
+                width: 200px;
+                height: 46px;
+                padding-left: 10px;
+                font-size: 18px;
+            }
+
+            form .title {
+                position: absolute;
+                font-size: 12px;
+                top: 15px;
+                right: 80px;
+            }
+            .search-font{
+                color: #757575;
+                background: #eee;
+                padding: 0 8px;
+                text-align: right;
+
+            }
+            .search-font:hover{
+                background: #ff6700;
+                color: #fff;
+                text-align: right;
+            }
+            .main-list-slider {
+                height: 480px;
+                background: #0ff;
+                display: flex;
+                width: 100%;
+                position: relative;
+                margin-top: 20px;
+            }
+            .main-list-slider img{
+                width: 100%;
+                height: 100%;
+            }
+            .list-slider{
+                width: 234px;
+                height: 100%;
+                background: #0f0f0f;
+                position: absolute;
+                opacity: .7;
+                z-index: 222;
+            }
+            .list-slider ul{
+                padding-top: 40px;
+                box-sizing: border-box;
+
+                color: #fff;
+                position: relative;
+                z-index: 10000;
+            }
+            .list-slider ul li{
+                height: 42px;
+                padding-left: 40px;
+                line-height: 42px;
+                cursor: pointer;
+            }
+            .list-slider ul li:hover{
+                background: #ff6700;
+            }
+            .main-header-input input {
+                width: 200px;
+                height: 48px;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="topBar">
+        <div class="container">
+            <div class="top_l">
+                <a href="">小米商城</a>
+                <span class="sep">|</span>
+                <a href="">MIUI</a>
+                <span class="sep">|</span>
+                 <a href="">IOT</a>
+                <span class="sep">|</span>
+                <a href="">云服务</a>
+                <span class="sep">|</span>
+                <a href="">金融</a>
+                <span class="sep">|</span>
+                <a href="">有品</a>
+                <span class="sep">|</span>
+                <a href="">小爱开放平台</a>
+                <span class="sep">|</span>
+                <a href="">政企服务</a>
+                <span class="sep">|</span>
+                <a href="">资质证照片</a>
+                <span class="sep">|</span>
+                <a href="">协议规则</a>
+                <span class="sep">|</span>
+                <a href="">下载app</a>
+                <span class="sep">|</span>
+                <a href="">select region</a>
+                <span class="sep">|</span>
+            </div>
+            <div class="top_shop">
+                <a href="">购物车(<span class="shopCount">0</span>)
+                </a>
+            </div>
+            <div class="top_shop">
+                <a href="">登录</a>
+                <span class="sep">|</span>
+                <a href="">注册</a>
+                <span class="sep">|</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="">
+                    <img src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="nav-header">
+                <ul>
+                    <li class="nav-category">
+                        <a href="">
+                            <img src="http://i1.mifile.cn/a4/cms_15471344719482_BFyEA.gif" alt="">
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            小米手机
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            红米
+                        </a>
+
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            电视
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            笔记本
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            家电
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            新品
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="">
+                            路由器
+                        </a>
+                        <li class="item">
+                        <a href="">
+                            智能硬件
+                        </a>
+                    <li class="item">
+                        <a href="">
+                            服务
+                        </a>
+                    <li class="item">
+                        <a href="">
+                            社区
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <form action="">
+                <input type="text">
+                <input type="submit" value="搜索">
+                <div class="title">
+                    <a href="" class="search-font">小米8</a>
+                    <a href="" class="search-font">小米MIX 2S</a>
+                </div>
+            </form>
+        </div>
+
+            <div class="main-list-slider">
+                    <div class="list-slider">
+                        <ul>
+                            <li>手机  电话卡</li>
+                            <li>电视  盒子</li>
+                            <li>笔记本  平板</li>
+                            <li>家电  插线板</li>
+                            <li>出行  穿戴</li>
+                            <li>智能  路由器</li>
+                            <li>电源  配件</li>
+                            <li>健康  儿童</li>
+                            <li>耳机  音响</li>
+                            <li>生活  箱包</li>
+                        </ul>
+
+                    </div>
+                    <img src="images/banner.jpg" />
+                </div>
+
+
+    </div>
+
+
+    </body>
+    </html>
