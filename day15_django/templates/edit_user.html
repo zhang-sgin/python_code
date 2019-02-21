@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-Type" charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="post">
+    <p>
+        用户名: <input type="text" name="new_name" value="{{ obj.name }}"> <span>{{ err_msg }}</span>
+        用户名密码: <input type="password" name="new_pwd" value="{{ obj.pwd }}"> <span>{{ err_msg }}</span>
+
+    </p>
+    <button>修改</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-Type" charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+
+{{ l.0 }}
+{{ l.1 }}
+
+<br>
+{{ d.keys }}
+<br>
+{{ person_list.0.name }}
+{{ person_list.0.age }}
+{{ person_list.0.dream }}
+
+<br>
+{{ kong|default:'nothing' }}
+
+<br>
+{{ filesize|filesizeformat }}
+<br>
+{{ num }}
+{{ num|add:'a4' }}
+<br>
+{{ l1|add:l2 }}
+
+<br>
+{{ person_list|length }}
+{{ l1|add:l2|length }}
+<br>
+{{ person_list|slice:'0:3:2' }}
+<br>
+
+{{ long }}
+{{ long|truncatechars:16 }}
+
+<br>
+{#{{ now|date:'Y-m-d H:M:S' }}#}
+{{ now }}
+
+{{ a_html|safe }}
+
+<br>
+<ul>
+    {% for pe in person_list %}
+
+        {% for person in pe %}
+
+            <li>{{ forloop.parentloop }}</li>
+
+        {% endfor %}
+
+
+    {% endfor %}
+
+</ul>
+
+
+{% if 10 > 5 and 5 > 1 %}
+    真
+{% else %}
+    假
+{% endif %}
+
+
+{% with person_list.0.1 as egon %}
+
+    {{ egon }}
+    {{ egon }}
+    {{ egon }}
+    {{ egon }}
+
+{% endwith %}
+
+
+
+</body>
+</html>

@@ -19,8 +19,14 @@ from app01 import views
 
 
 urlpatterns = [
+    # url('', views.login),
     url('^admin/', admin.site.urls),
-    url('^index/$', views.index),
-    url('^login/$', views.login),
+    url('^index/', views.index),
+    # url('^login/', views.login),
+    url('login', views.login),
+    url('^add_user/', views.add_user),
+    url('^list_user/', views.list_user),
+    url('^del_user/', views.del_user),
+    url('^edit_user/', views.edit_user),
 
 ]

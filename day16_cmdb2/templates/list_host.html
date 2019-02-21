@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block host_active %}
+    active
+{% endblock %}
+
+{% block main %}
+    <h2 class="sub-header">主机列表</h2>
+    <div class="table-responsive">
+        <a href="{% url 'add_host' %}" class="btn btn-primary btn-sm">添加</a>
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>ID</th>
+                <th>主机地址</th>
+                <th>主机密码</th>
+                <th>业务线名称</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for i in all_host %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ i.pk }}</td>
+                    <td>{{ i.host_name }}</td>
+                    <td>{{ i.host_pwd }}</td>
+                    <td>{{ i.service_id }}</td>
+                    <td>
+                        <a href="{% url 'del_host' i.pk %}" class="btn btn-danger btn-sm">删除</a>
+                        <a href="{% url 'edit_host' i.pk %}" class="btn btn-primary btn-sm">编辑</a>
+                    </td>
+                    {% empty %}
+                    <td colspan="4" style="text-align: center">没有数据</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-Type" charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>day16</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% get_static_prefix %}css/dsb.css">
+
+    {% block css %}
+
+    {% endblock %}
+
+</head>
+<body>
+
+{% include 'nav.html' %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="{% block pub_active %} {% endblock %}"><a href="{% url 'list_user' %}">用户列表 <span class="sr-only">(current)</span></a></li>
+                <li class="{% block service_active %} {% endblock %}"><a href="{% url 'list_service' %}">业务线列表</a></li>
+                <li class="{% block host_active %} {% endblock %}"><a href="{% url 'list_host' %}">主机列表</a></li>
+            </ul>
+
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            {% block  main %}
+                xxxxxxxx
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+
+{% block js %}
+
+{% endblock %}
+</body>
+</html>
