@@ -26,9 +26,9 @@
                     <td>{{ i.pk }}</td>
                     <td>{{ i.host_name }}</td>
                     <td>{{ i.host_pwd }}</td>
-                    <td>{{ i.service_id }}</td>
+                    <td>{{ i.service.service_name }}</td>
                     <td>
-                        <a href="{% url 'del_host' i.pk %}" class="btn btn-danger btn-sm">删除</a>
+                        <a href="{% url 'del_host' 'host' i.pk %}" class="btn btn-danger btn-sm">删除</a>
                         <a href="{% url 'edit_host' i.pk %}" class="btn btn-primary btn-sm">编辑</a>
                     </td>
                     {% empty %}

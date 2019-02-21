@@ -12,8 +12,6 @@ class User(models.Model):  # 用户表
 class Service(models.Model):
     pid = models.AutoField(primary_key=True)
     service_name = models.CharField(max_length=32)
-    user = models.ForeignKey('User',on_delete=models.CASCADE)
-
 
 class Host(models.Model):
     host_name = models.CharField(max_length=32)

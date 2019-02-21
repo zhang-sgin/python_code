@@ -20,9 +20,12 @@ from host import views as hostview
 
 urlpatterns = [
     url(r'^list_host/$',hostview.list_host,name='list_host'),
-    url(r'^add_host/$',hostview.add_host,name='add_host'),
-    url(r'^edit_host/$',hostview.edit_host,name='edit_host'),
-    url(r'^del_host/$',hostview.del_host,name='del_host'),
+
+    url(r'^add_host/$', hostview.add_host.as_view(), name='add_host'),
+
+    url(r'^edit_host/(\d+)/$', hostview.edit_host.as_view(), name='edit_host'),
+    url(r'^del_(host|user)/(\d+)/$', hostview.del_host, name='del_host'),
+
 ]
 
 
