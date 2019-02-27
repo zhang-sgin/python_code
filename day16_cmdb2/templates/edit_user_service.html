@@ -7,6 +7,11 @@
     <title>Title</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-select.min.css' %}">
+    <link rel="stylesheet" href="{% get_static_prefix %}css/dsb.css">
+    <script href="bootstrap/js/bootstrap-select.min.js"></script>
+    <script href="bootstrap/js/defaults-*.min.js"></script>
+    <script href="bootstrap/js/select-js/defaults-*.min.js"></script>
 </head>
 <body>
 
@@ -16,10 +21,11 @@
         <div class="col-lg-8 col-lg-offset-2" style="margin-top: 70px">
             <form class="form-horizontal" action="" method="post">
                 {% csrf_token %}
+
                 <div class="form-group">
                     <label for="service_id" class="col-sm-2 control-label">业务线</label>
                     <div class="col-sm-10">
-                        <select name="service_id" id="service_id" class="form-control">
+                        <select multiple name="service_id" id="service_id" class="form-control">
                             {% for i in all_services %}
                                 {% if edit_host.i == i %}
                                     <option selected value="{{ i.pk }}">{{ i.service_name }}</option>
@@ -30,10 +36,12 @@
                         </select>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label for="user_id" class="col-sm-2 control-label">管理员</label>
                     <div class="col-sm-10">
-                        <select name="user_id" id="user_id" class="form-control">
+                        <select id="user_id" name="user_id" class="selectpicker show-tick form-control" multiple
+                                data-live-search="true">
                             {% for i in list_user %}
                                 {% if edit_host.i == i %}
                                     <option selected value="{{ i.pk }}">{{ i.name }}</option>
@@ -45,7 +53,22 @@
                     </div>
                 </div>
 
-        </div>
+
+{#                <div class="form-group">#}
+{#                    <label for="user_id" class="col-sm-2 control-label">管理员</label>#}
+{#                    <div class="col-sm-10">#}
+{#                        <select multiple name="user_id" id="user_id" class="form-control">#}
+{#                            {% for i in list_user %}#}
+{#                                {% if edit_host.i == i %}#}
+{#                                    <option selected value="{{ i.pk }}">{{ i.name }}</option>#}
+{#                                {% else %}#}
+{#                                    <option value="{{ i.pk }}">{{ i.name }}</option>#}
+{#                                {% endif %}#}
+{#                            {% endfor %}#}
+{#                        </select>#}
+{#                    </div>#}
+{#                </div>#}
+{#        </div>#}
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">

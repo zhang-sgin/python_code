@@ -7,7 +7,7 @@
 {% block main %}
     <h2 class="sub-header">主机关系表</h2>
     <div class="table-responsive">
-        <a href="{% url 'add_service_user' %}" class="btn btn-primary btn-sm">添加</a>
+{#        <a href="{% url 'add_service_user' %}" class="btn btn-primary btn-sm">添加</a>#}
         <table class="table table-bordered table-hover">
             <thead>
             <tr>
@@ -29,7 +29,7 @@
                     {% endfor %}
                     </td>
                     <td>
-                        <a href="{% url 'del_service_user' 'user' i.pk %}" class="btn btn-danger btn-sm">删除</a>
+{#                        <a href="{% url 'del_service_user' 'user' i.pk %}" class="btn btn-danger btn-sm">删除</a>#}
                         <a href="{% url 'edit_service_user' i.pk %}" class="btn btn-primary btn-sm">编辑</a>
                     </td>
                     {% empty %}

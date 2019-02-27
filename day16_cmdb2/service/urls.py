@@ -34,7 +34,7 @@ urlpatterns = [
     # url(r'^del_service_user/$', views.del_service_user, name='del_service_user'),
 
     url(r'^list_service_user/$', views.list_service_user, name='list_service_user'),
-    url(r'^add_service_user/$', views.add_service_user.as_view(), name='add_service_user'),
+    # url(r'^add_service_user/$', views.add_service_user.as_view(), name='add_service_user'),
     url(r'^edit_service_user/(\d+)/$', views.edit_service_user.as_view(), name='edit_service_user'),
-    url(r'^del_service_(host|user)/(\d+)/$', views.del_service_user, name='del_service_user'),
+    # url(r'^del_service_(host|user)/(\d+)/$', views.del_service_user, name='del_service_user'),
 ]

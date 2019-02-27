@@ -48,18 +48,18 @@ def list_service_user(req):
     return render_to_response('list_user_service.html', {'all_services_user': all_services_user, 'name': 'base.html'})
 
 
-class add_service_user(View):
-    def get(self, request):
-        all_services = user_models.Service.objects.all()
-        list_user = user_models.User.objects.all()
-        return render(request, 'add_service_user.html', {'all_services': all_services, 'list_user': list_user})
-
-    def post(self, request):
-        service_id = request.POST.get('service_id')
-        user_id = request.POST.get('user_id')
-
-        user_models.User_Services.objects.create(service_id_id=service_id, user_id_id=user_id)
-        return redirect(reverse('list_service_user'))
+# class add_service_user(View):
+#     def get(self, request):
+#         all_services = user_models.Service.objects.all()
+#         list_user = user_models.User.objects.all()
+#         return render(request, 'add_service_user.html', {'all_services': all_services, 'list_user': list_user})
+#
+#     def post(self, request):
+#         service_id = request.POST.get('service_id')
+#         user_id = request.POST.get('user_id')
+#
+#         user_models.User_Services.objects.create(service_id_id=service_id, user_id_id=user_id)
+#         return redirect(reverse('list_service_user'))
 
 
 class edit_service_user(View):
@@ -80,9 +80,10 @@ class edit_service_user(View):
         return redirect(reverse('list_service_user'))
 
 
-def del_service_user(request, table, pk):
-    user_models.User_Services.objects.get(pk=pk).delete()
-    return redirect(reverse('list_service_user'))
+# def del_service_user(request, table, pk):
+#     user_obj = user_models.Service.objects.get(pk=pk)
+#     user_obj.user_id.remove(pk)
+#     return redirect(reverse('list_service_user'))
 
 #
 #
