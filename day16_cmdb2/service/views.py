@@ -66,10 +66,11 @@ class edit_service_user(View):
     def get(self, request, pk):
         all_services = user_models.Service.objects.all()
         list_user = user_models.User.objects.all()
-        return render(request, 'add_service_user.html', {'all_services': all_services, 'list_user': list_user})
+        # return render(request, 'add_service_user.html', {'all_services': all_services, 'list_user': list_user})
+        return render(request, 'edit_user_service.html', {'all_services': all_services, 'list_user': list_user})
 
     def post(self, request, pk):
-        edit_service_user = user_models.User_Services.objects.get(pk=pk)
+        edit_service_user = user_models.User.objects.get(pk=pk)
         print(edit_service)
         service_id = request.POST.get('service_id')
         user_id = request.POST.get('user_id')
