@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60789f68-52fb-4ca7-a4f6-bbf6fbbfa4a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6afadedf-905c-44ef-9e18-85038ecc22ea/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6afadedf-905c-44ef-9e18-85038ecc22ea/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a01478a0-fda0-420a-b346-b491fcca3c82/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a01478a0-fda0-420a-b346-b491fcca3c82/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/AdminLTE.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/AdminLTE.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/blue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min-3.3.6.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min-3.3.6.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/google-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/google-font.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/ionicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/ionicons.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/fonts/ionicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/fonts/ionicons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/adminlte.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/adminlte.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/html5shiv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/html5shiv.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/icheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/icheck.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/jquery-2.2.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery-2.2.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/js/respond.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/js/respond.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/login2-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/login2-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/particles.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/particles.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/list_user_service.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/list_user_service.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="60789f68-52fb-4ca7-a4f6-bbf6fbbfa4a5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="95">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
               <folding>
                 <element signature="e#667#703#0" />
               </folding>
@@ -72,28 +44,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+            <state relative-caret-position="185">
+              <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
                 <element signature="e#261#428#0" />
                 <element signature="e#460#828#0" />
                 <element signature="e#861#1380#0" />
                 <element signature="e#1424#1516#0" />
+                <element signature="e#1796#2317#0" />
+                <element signature="e#2355#3057#0" />
                 <element signature="e#3211#3213#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/list_user_service.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+            <state relative-caret-position="209">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="e#1710#1736#0#HTML" expanded="true" />
               </folding>
@@ -272,7 +246,7 @@
       <workItem from="1550756753712" duration="4200000" />
       <workItem from="1551056297374" duration="1543000" />
       <workItem from="1551171621878" duration="20690000" />
-      <workItem from="1551280635242" duration="518000" />
+      <workItem from="1551280635242" duration="776000" />
     </task>
     <task id="LOCAL-00001" summary="day17">
       <created>1551268360658</created>
@@ -281,11 +255,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551268360658</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day17">
+      <created>1551281402570</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551281402571</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61143000" />
+    <option name="totallyTimeSpent" value="61401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -545,10 +526,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/list_user_service.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#1710#1736#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding>
             <element signature="e#667#703#0" />
           </folding>
@@ -557,25 +548,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+        <state relative-caret-position="185">
+          <caret line="45" column="57" lean-forward="true" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#261#428#0" />
             <element signature="e#460#828#0" />
             <element signature="e#861#1380#0" />
             <element signature="e#1424#1516#0" />
+            <element signature="e#1796#2317#0" />
+            <element signature="e#2355#3057#0" />
             <element signature="e#3211#3213#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/list_user_service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-          <folding>
-            <element signature="e#1710#1736#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
