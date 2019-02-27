@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60789f68-52fb-4ca7-a4f6-bbf6fbbfa4a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6afadedf-905c-44ef-9e18-85038ecc22ea.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_cmdb2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/day16_cmdb2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/host/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/host/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/edit_host.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit_host.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/list_service.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/list_service.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="65" column="36" selection-start-line="65" selection-end-line="66" />
+            <state relative-caret-position="404">
+              <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
               <folding>
                 <element signature="e#26#61#0" expanded="true" />
               </folding>
@@ -73,53 +62,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="173">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#261#428#0" />
                 <element signature="e#460#981#0" />
-                <element signature="e#1760#1863#0" />
+                <element signature="e#861#1385#0" />
                 <element signature="e#1902#2106#0" />
                 <element signature="e#2143#2664#0" />
                 <element signature="e#2702#3404#0" />
                 <element signature="e#3453#3556#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/edit_user.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="55" column="130" selection-start-line="55" selection-start-column="127" selection-end-line="55" selection-end-column="130" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/edit_service.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/add_service.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" selection-start-line="18" selection-end-line="23" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/list_service.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -212,6 +165,11 @@
               <item name="day16_cmdb2" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="day16_cmdb2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day16_cmdb2" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -293,12 +251,20 @@
       <workItem from="1550725824995" duration="10110000" />
       <workItem from="1550756753712" duration="4200000" />
       <workItem from="1551056297374" duration="1543000" />
-      <workItem from="1551171621878" duration="19184000" />
+      <workItem from="1551171621878" duration="19440000" />
     </task>
+    <task id="LOCAL-00001" summary="day17">
+      <created>1551268360658</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551268360658</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59119000" />
+    <option name="totallyTimeSpent" value="59375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -330,6 +296,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day17" />
+    <option name="LAST_COMMIT_MESSAGE" value="day17" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/host/apps.py">
@@ -558,17 +528,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/add_service.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" selection-start-line="18" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="65" column="36" selection-start-line="65" selection-end-line="66" />
+        <state relative-caret-position="404">
+          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
           <folding>
             <element signature="e#26#61#0" expanded="true" />
           </folding>
@@ -577,26 +540,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/edit_user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="55" column="130" selection-start-line="55" selection-start-column="127" selection-end-line="55" selection-end-column="130" />
+        <state relative-caret-position="346">
+          <caret line="58" column="43" lean-forward="true" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/edit_service.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="65" lean-forward="true" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+        <state relative-caret-position="360">
+          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" selection-start-line="18" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="173">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#261#428#0" />
             <element signature="e#460#981#0" />
-            <element signature="e#1760#1863#0" />
+            <element signature="e#861#1385#0" />
             <element signature="e#1902#2106#0" />
             <element signature="e#2143#2664#0" />
             <element signature="e#2702#3404#0" />

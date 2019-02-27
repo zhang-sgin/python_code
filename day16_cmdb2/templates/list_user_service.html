@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block service_user_active %}
+    active
+{% endblock %}
+
+{% block main %}
+    <h2 class="sub-header">主机关系表</h2>
+    <div class="table-responsive">
+        <a href="{% url 'add_service_user' %}" class="btn btn-primary btn-sm">添加</a>
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>ID</th>
+                <th>业务线</th>
+                <th>管理员</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for i in all_services_user %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ i.pk }}</td>
+                    <td>{{ i.service_id.service_name }}</td>
+                    <td>{{ i.user_id.name }}</td>
+                    <td>
+                        <a href="{% url 'del_service_user' 'user' i.pk %}" class="btn btn-danger btn-sm">删除</a>
+                        <a href="{% url 'edit_service_user' i.pk %}" class="btn btn-primary btn-sm">编辑</a>
+                    </td>
+                    {% empty %}
+                    <td colspan="4" style="text-align: center">没有数据</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
