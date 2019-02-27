@@ -29,8 +29,9 @@ class edit_host(View):
     def get(self, request, pk):
         edit_host = user_models.Host.objects.get(pk=pk)
 
-        list_user = user_models.User.objects.all()
-        return render(request, 'edit_host.html', {'edit_host': edit_host, 'list_user': list_user})
+        # list_user = user_models.User.objects.all()
+        list_service = user_models.Service.objects.all()
+        return render(request, 'edit_host.html', {'edit_host': edit_host, 'list_user': list_service})
 
 
     def post(self, request, pk):

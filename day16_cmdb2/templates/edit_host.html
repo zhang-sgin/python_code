@@ -31,9 +31,9 @@
                         <select name="pub" id="pub" class="form-control">
                             {% for i in list_user %}
                                 {% if edit_host.i == i %}
-                                    <option selected value="{{ i.pk }}">{{ i.name }}</option>
+                                    <option selected value="{{ i.pk }}">{{ i.service_name }}</option>
                                 {% else %}
-                                    <option value="{{ i.pk }}">{{ i.name }}</option>
+                                    <option value="{{ i.pk }}">{{ i.service_name }}</option>
                                 {% endif %}
                             {% endfor %}
                         </select>

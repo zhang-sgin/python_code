@@ -24,8 +24,8 @@
                     <td>{{ i.pk }}</td>
                     <td>{{ i.service_name }}</td>
                     <td>
-                        <a href="{% url 'del_service' %}" class="btn btn-danger btn-sm">删除</a>
-                        <a href="{% url 'edit_service' %}" class="btn btn-primary btn-sm">编辑</a>
+                        <a href="{% url 'del_service' 'service' i.pk  %}" class="btn btn-danger btn-sm">删除</a>
+                        <a href="{% url 'edit_service'  i.pk %}" class="btn btn-primary btn-sm">编辑</a>
                     </td>
                     {% empty %}
                     <td colspan="4" style="text-align: center">没有数据</td>

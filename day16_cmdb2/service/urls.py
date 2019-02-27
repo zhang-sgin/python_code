@@ -18,9 +18,23 @@ from django.contrib import admin
 from service import views
 
 urlpatterns = [
-    url(r'^list_service/$', views.list_service, name='list_service'),
-    url(r'^add_service/$', views.add_service, name='add_service'),
-    url(r'^edit_service/$', views.edit_service, name='edit_service'),
-    url(r'^del_service/$', views.del_service, name='del_service'),
+    # url(r'^list_service/$', views.list_service, name='list_service'),
+    # url(r'^add_service/$', views.add_service, name='add_service'),
+    # url(r'^edit_service/$', views.edit_service, name='edit_service'),
+    # url(r'^del_service/$', views.del_service, name='del_service'),
 
+    url(r'^list_service/$', views.list_service, name='list_service'),
+    url(r'^add_service/$', views.add_service.as_view(), name='add_service'),
+    url(r'^edit_service/(\d+)/$', views.edit_service.as_view(), name='edit_service'),
+    url(r'^del_(service|user)/(\d+)/$', views.del_service, name='del_service'),
+
+    # url(r'^list_service_user/$', views.list_service_user, name='list_service_user'),
+    # url(r'^add_service_user/$', views.add_service_user, name='add_service_user'),
+    # url(r'^edit_service_user/$', views.edit_service_user, name='edit_service_user'),
+    # url(r'^del_service_user/$', views.del_service_user, name='del_service_user'),
+
+    url(r'^list_service_user/$', views.list_service_user, name='list_service_user'),
+    url(r'^add_service_user/$', views.add_service_user.as_view(), name='add_service_user'),
+    url(r'^edit_service_user/(\d+)/$', views.edit_service_user.as_view(), name='edit_service_user'),
+    url(r'^del_service_(host|user)/(\d+)/$', views.del_service_user, name='del_service_user'),
 ]

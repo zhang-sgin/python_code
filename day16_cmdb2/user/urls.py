@@ -20,7 +20,10 @@ from host import views as hostview
 from service import views as serviceview
 
 urlpatterns = [
+    # url(r'^login/$',views.login,name='login'),
     url(r'^login/$',views.login,name='login'),
+
+
     url(r'^list_user/$',views.list_user,name='list_user'),
     url(r'^add_user/$',views.add_user,name='add_user'),
 

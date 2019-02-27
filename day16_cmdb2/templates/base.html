@@ -4,7 +4,7 @@
     <meta http-equiv="content-Type" charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>day16</title>
+    <title>day17</title>
     {% load static %}
 
     <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
@@ -25,6 +25,8 @@
                 <li class="{% block pub_active %} {% endblock %}"><a href="{% url 'list_user' %}">用户列表 <span class="sr-only">(current)</span></a></li>
                 <li class="{% block service_active %} {% endblock %}"><a href="{% url 'list_service' %}">业务线列表</a></li>
                 <li class="{% block host_active %} {% endblock %}"><a href="{% url 'list_host' %}">主机列表</a></li>
+                <li class="{% block service_user_active %} {% endblock %}"><a href="{% url 'list_service_user' %}">day17关系表</a></li>
+
             </ul>
 
         </div>

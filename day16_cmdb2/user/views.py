@@ -1,6 +1,8 @@
 # Create your views here.
 from django.shortcuts import render
 from django.shortcuts import render, HttpResponse, redirect,reverse
+from django.contrib.auth import authenticate,login,logout
+from django.views import View
 from user import models
 
 def login(request):
@@ -15,6 +17,25 @@ def login(request):
         else:
             err_msg = '用户名或密码错误'
     return render(request,'login.html',{'err_msg':err_msg})
+
+
+# class Uselogin(View):
+#     def get(self, request):
+#         all_host = models.User.objects.all()
+#         list_user = models.User.objects.all()
+#         return render(request, 'add_host.html', {'all_host': all_host,'list_user': list_user})
+#
+#     def post(self, request):
+#         name = request.POST.get('hostname')
+#         pwd = request.POST.get('hostpwd')
+#         service_id = request.POST.get('pub')
+#
+#         models.User.objects.create(host_name=name, host_pwd=pwd, service_id=service_id)
+#         return redirect(reverse('list_host'))
+
+
+
+
 
 
 def list_user(request):
