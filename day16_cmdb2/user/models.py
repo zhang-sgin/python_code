@@ -13,8 +13,10 @@ class User(models.Model):  # 用户表
 class Service(models.Model):    #业务线表
     pid = models.AutoField(primary_key=True)
     service_name = models.CharField(max_length=32)
+    user_id = models.ManyToManyField('User')
+
     def __str__(self):
-        return "业务线表 - ID:{} - Service_name:{}".format(self.pk,self.service_name)
+        return "业务线表 - ID:{} - Service_name:{} - User_ID:{}".format(self.pk,self.service_name,self.user_id)
 
 # class User_Services(models.Model):
 #     pid = models.AutoField(primary_key=True)
@@ -26,16 +28,16 @@ class Service(models.Model):    #业务线表
 #     def __str__(self):
 #         return "业务线与负责人关系表 - ID:{} - Service_ID:{} - User_ID:{}".format(self.pk,self.service_id,self.user_id)
 
-class User_Services(models.Model):  #用户和业务线关联表
-    pid = models.AutoField(primary_key=True)
-    service_id = models.ForeignKey('Service',on_delete=models.CASCADE)
-    user_id = models.ForeignKey('User',on_delete=models.CASCADE)
-
-    class Meta:
-        db_table = "User_Services_day17"
-
-    def __str__(self):
-        return "业务线与负责人关系表 - ID:{} - Service_ID:{} - User_ID:{}".format(self.pk,self.service_id,self.user_id)
+# class User_Services(models.Model):  #用户和业务线关联表
+#     pid = models.AutoField(primary_key=True)
+#     service_id = models.ForeignKey('Service',on_delete=models.CASCADE)
+#     user_id = models.ForeignKey('User',on_delete=models.CASCADE)
+#
+#     class Meta:
+#         db_table = "User_Services_day17"
+#
+#     def __str__(self):
+#         return "业务线与负责人关系表 - ID:{} - Service_ID:{} - User_ID:{}".format(self.pk,self.service_id,self.user_id)
 
 
 class Host(models.Model):

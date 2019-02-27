@@ -23,8 +23,11 @@
                 <tr>
                     <td>{{ forloop.counter }}</td>
                     <td>{{ i.pk }}</td>
-                    <td>{{ i.service_id.service_name }}</td>
-                    <td>{{ i.user_id.name }}</td>
+                    <td>{{ i.service_name }}</td>
+                    <td>{% for user in i.user_id.all %}
+                        {{ user.name }}
+                    {% endfor %}
+                    </td>
                     <td>
                         <a href="{% url 'del_service_user' 'user' i.pk %}" class="btn btn-danger btn-sm">删除</a>
                         <a href="{% url 'edit_service_user' i.pk %}" class="btn btn-primary btn-sm">编辑</a>

@@ -1,5 +1,5 @@
 from django.shortcuts import render, reverse
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import render, HttpResponse, redirect,render_to_response
 from user import models as user_models
 from service import models
 from django.views import View
@@ -42,10 +42,10 @@ def del_service(request, table, pk):
     return redirect(reverse('list_service'))
 
 
-def list_service_user(request):
-    all_services_user = user_models.User_Services.objects.all()
+def list_service_user(req):
+    all_services_user = user_models.Service.objects.all()
     print(all_services_user)
-    return render(request, 'list_user_service.html', {'all_services_user': all_services_user, 'name': 'base.html'})
+    return render_to_response('list_user_service.html', {'all_services_user': all_services_user, 'name': 'base.html'})
 
 
 class add_service_user(View):
@@ -83,3 +83,41 @@ class edit_service_user(View):
 def del_service_user(request, table, pk):
     user_models.User_Services.objects.get(pk=pk).delete()
     return redirect(reverse('list_service_user'))
+
+#
+#
+# class add_service_user(View):
+#     def get(self, request):
+#         all_services = user_models.Service.objects.all()
+#         list_user = user_models.User.objects.all()
+#         return render(request, 'add_service_user.html', {'all_services': all_services, 'list_user': list_user})
+#
+#     def post(self, request):
+#         service_id = request.POST.get('service_id')
+#         user_id = request.POST.get('user_id')
+#
+#         user_models.User_Services.objects.create(service_id_id=service_id, user_id_id=user_id)
+#         return redirect(reverse('list_service_user'))
+#
+#
+# class edit_service_user(View):
+#     def get(self, request, pk):
+#         all_services = user_models.Service.objects.all()
+#         list_user = user_models.User.objects.all()
+#         return render(request, 'add_service_user.html', {'all_services': all_services, 'list_user': list_user})
+#
+#     def post(self, request, pk):
+#         edit_service_user = user_models.User_Services.objects.get(pk=pk)
+#         print(edit_service)
+#         service_id = request.POST.get('service_id')
+#         user_id = request.POST.get('user_id')
+#         print(service_id, user_id)
+#         edit_service_user.service_id_id = service_id
+#         edit_service_user.user_id_id = user_id
+#         edit_service_user.save()
+#         return redirect(reverse('list_service_user'))
+#
+#
+# def del_service_user(request, table, pk):
+#     user_models.User_Services.objects.get(pk=pk).delete()
+#     return redirect(reverse('list_service_user'))
