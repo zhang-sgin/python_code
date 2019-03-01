@@ -120,6 +120,9 @@ USE_TZ = True
 
 DATETIME_FORMAT = 'Y-m-d H:i:s'
 
+SESSION_COOKIE_AGE
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
