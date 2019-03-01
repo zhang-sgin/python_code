@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'check-login.check',
 ]
 
 ROOT_URLCONF = 'day16_cmdb2.urls'
@@ -119,8 +120,6 @@ USE_L10N = True
 USE_TZ = True
 
 DATETIME_FORMAT = 'Y-m-d H:i:s'
-
-SESSION_COOKIE_AGE
 
 
 # Static files (CSS, JavaScript, Images)

@@ -20,6 +20,7 @@ from host import views as hostview
 
 urlpatterns = [
     url(r'^login/$',views.login,name='login'),
+    url(r'^logout/$',views.logout,name='logout'),
     url(r'user/', include('user.urls')),
     url(r'host/', include('host.urls')),
     url(r'service/', include('service.urls')),

@@ -3,15 +3,18 @@ from django.shortcuts import render, HttpResponse, redirect,render_to_response
 from user import models as user_models
 from service import models
 from django.views import View
+from user.views import check
+from django.utils.decorators import method_decorator
 
 
 # Create your views here.
 
+@check
 def list_service(request):
     all_services = user_models.Service.objects.all()  # QuerySet  对象列表
     return render(request, 'list_service.html', {'all_services': all_services, 'name': 'base.html'})
 
-
+@method_decorator(check, name='post')
 class add_service(View):
     def get(self, request):
         all_services = user_models.Service.objects.all()
@@ -22,7 +25,7 @@ class add_service(View):
         user_models.Service.objects.create(service_name=service_name)
         return redirect(reverse('list_service'))
 
-
+@method_decorator(check, name='post')
 class edit_service(View):
     def get(self, request, pk):
         obj = user_models.Service.objects.filter(pk=pk).first()
@@ -36,12 +39,12 @@ class edit_service(View):
         edit_service.save()
         return redirect(reverse('list_service'))
 
-
+@check
 def del_service(request, table, pk):
     user_models.Service.objects.get(pk=pk).delete()
     return redirect(reverse('list_service'))
 
-
+@check
 def list_service_user(req):
     all_services_user = user_models.Service.objects.all()
     return render_to_response('list_user_service.html', {'all_services_user': all_services_user, 'name': 'base.html'})
@@ -60,7 +63,7 @@ def list_service_user(req):
 #         user_models.User_Services.objects.create(service_id_id=service_id, user_id_id=user_id)
 #         return redirect(reverse('list_service_user'))
 
-
+@method_decorator(check, name='post')
 class edit_service_user(View):
     def get(self, request, pk):
         all_services = user_models.Service.objects.all()
