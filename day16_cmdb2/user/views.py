@@ -5,23 +5,6 @@ from django.contrib.auth import authenticate,login,logout
 from django.views import View
 from user import models
 
-# def login(request):
-#     if request.method == "POST":
-#         user = request.POST.get("user")
-#         pwd = request.POST.get("pwd")
-#
-#         if user == "alex" and pwd == "alex1234":
-#             # 设置session
-#             request.session["user"] = user
-#             # 获取跳到登陆页面之前的URL
-#             next_url = request.GET.get("next")
-#             # 如果有，就跳转回登陆之前的URL
-#             if next_url:
-#                 return redirect(next_url)
-#             # 否则默认跳转到index页面
-#             else:
-#                 return redirect("/index/")
-#     return render(request, "login.html")
 def check(func):
     def inner(request, *args, **kwargs):
         next_url = request.get_full_path()
@@ -64,6 +47,7 @@ def logout(request):
 @check
 def list_user(request):
     all_user = models.User.objects.all()
+    print(all_user,type(all_user))
     return render(request, 'list_user.html', {'all_user': all_user,'name': 'base.html'})
 
 @check
