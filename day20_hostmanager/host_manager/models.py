@@ -4,8 +4,10 @@ from rbac.models import  RbacUser
 # Create your models here.
 
 class BusinessUnit(models.Model):
-    name = models.CharField(max_length=32)
-    
+    name = models.CharField(max_length=32,verbose_name='产品名称')
+    level = models.CharField(max_length=32,verbose_name='服务级别')
+    owner = models.CharField(max_length=32,verbose_name='负责人')
+
     def __str__(self):
         return self.name
 

@@ -30,8 +30,6 @@ def logout(request):
     return ret
 
 
-
-
 def host_list(request):
     all_host = models.Host.objects.all()
     

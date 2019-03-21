@@ -16,10 +16,10 @@ def init_permission(request, obj, ):
         'permissions__parent_id',
         'permissions__parent__name',
     ).distinct()
-    
+
     # 保存权限信息
     permission_dict = {}
-    
+
     # 保存菜单的信息
     menu_dict = {}
     

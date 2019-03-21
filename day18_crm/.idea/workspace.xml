@@ -2,42 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee316d1-8037-43b7-9bd9-b480702ff1c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/dataSources/8e3a04ca-587c-4f6a-b587-f0f7d7eda08b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/dataSources/8e3a04ca-587c-4f6a-b587-f0f7d7eda08b/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/day15_django.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/migrations/0002_publisher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/migrations/0003_auto_20190213_1536.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/migrations/0004_auto_20190213_1559.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/app01/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/day15_django/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/day15_django/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/day15_django/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/day15_django/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/static.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/templates/add_user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/templates/edit_user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/templates/list_user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/templates/login2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day15_django/templates/starter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day16_cmdb2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day16_cmdb2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/day20_hostmanager/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/day20_hostmanager/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/host_manager/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/depart_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/host_add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/host_edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/host_manager/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/host_manager/views/host.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/views/host.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/host_manager/views/user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/rbac/middlewares/rbac.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/middlewares/rbac.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/rbac/templates/breadcrumb.html" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/templates/breadcrumb.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day20_hostmanager/rbac/templates/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/templates/menu.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="389" />
     <option name="y" value="56" />
     <option name="width" value="1280" />
@@ -252,12 +230,12 @@
       <workItem from="1553064527699" duration="1298000" />
       <workItem from="1553068151314" duration="262000" />
       <workItem from="1553068621971" duration="506000" />
-      <workItem from="1553133587399" duration="1626000" />
+      <workItem from="1553133587399" duration="2110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30496000" />
+    <option name="totallyTimeSpent" value="30980000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -267,7 +245,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.5017007" side_tool="true" weight="0.17590618" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3629469" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3629469" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

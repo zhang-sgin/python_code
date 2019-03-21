@@ -6,8 +6,8 @@
     {% load my_tags %}
     {% load rbac %}
 
-    {% if request|has_permission:'host_add' %}
-        <a href="{% reverse_url request 'host_add' %}" class="btn btn-sm btn-primary">添加</a>
+    {% if request|has_permission:'bus_add' %}
+        <a href="{% reverse_url request 'bus_add' %}" class="btn btn-sm btn-primary">添加</a>
     {% endif %}
 
 
@@ -16,36 +16,35 @@
         <tr>
             <th>序号</th>
             <th>ID</th>
-            <th>主机名</th>
-            <th>IP</th>
             <th>业务线</th>
+            <th>级别</th>
+            <th>负责人</th>
 
-            {% if request|has_permission:'host_edit' or request|has_permission:'host_del' %}
-
+            {% if request|has_permission:'bus_edit' or request|has_permission:'bus_del' %}
                 <th>操作</th>
             {% endif %}
         </tr>
         </thead>
         <tbody>
 
-        {% for host in all_host %}
+        {% for bus in all_bus %}
 
             <tr>
                 <td>{{ forloop.counter }}</td>
-                <td>{{ host.pk }}</td>
-                <td>{{ host.name }}</td>
-                <td>{{ host.ip }}</td>
-                <td>{{ host.bus }}</td>
+                <td>{{ bus.pk }}</td>
+                <td>{{ bus.name }}</td>
+                <td>{{ bus.level }}</td>
+                <td>{{ bus.owner }}</td>
 
-                {% if request|has_permission:'host_edit' or request|has_permission:'host_del' %}
+                {% if request|has_permission:'bus_edit' or request|has_permission:'bus_del' %}
 
                     <td>
-                        {% if request|has_permission:'host_edit' %}
-                            <a href="{% reverse_url request 'host_edit' host.pk %}"
+                        {% if request|has_permission:'bus_edit' %}
+                            <a href="{% reverse_url request 'bus_edit' bus.pk %}"
                                class="btn btn-sm btn-primary">编辑</a>
                         {% endif %}
 
-                        {% if request|has_permission:'host_del' %}
+                        {% if request|has_permission:'bus_del' %}
                             <a href="" class="btn btn-sm btn-danger">删除</a>
                         {% endif %}
 

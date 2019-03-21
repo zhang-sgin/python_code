@@ -19,9 +19,13 @@ from host_manager.views import host
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
     url(r'^login/', host.login, name='login'),
     url(r'^logout/',host.logout,name='logout'),
+    # url(r'^crm/',host.index,name='logout'),
+
     url(r'^hosts/', include('host_manager.urls')),
-    # url(r'^user/', include('host_manager.urls')),
+    url(r'^bus/', include('host_manager.urls')),
+
 ]
 

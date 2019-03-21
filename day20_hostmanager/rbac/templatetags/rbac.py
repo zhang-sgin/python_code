@@ -1,11 +1,7 @@
 from django.template import Library
-
 register = Library()
 from django.conf import settings
 from collections import OrderedDict
-
-
-# import re
 
 
 @register.inclusion_tag('menu.html')

@@ -11,8 +11,9 @@ class RbacMiddleWare(MiddlewareMixin):
         setattr(request,settings.MENU,None)
         # request.breadcrumb_list = [{'url': '/crm/index/', 'title': '首页'}]
         
-        setattr(request, settings.BREADCRUMB, [{'url': '/crm/index/', 'title': '首页'}])
-        
+        # setattr(request, settings.BREADCRUMB, [{'url': '/crm/index/', 'title': '首页'}])
+        setattr(request, settings.BREADCRUMB, [{'url': '/hosts/list/', 'title': '首页'}])
+
         # 获取当前访问的URL
         url = request.path_info
         
@@ -33,6 +34,7 @@ class RbacMiddleWare(MiddlewareMixin):
         
         # 获取到权限信息
         permission_dict = request.session[settings.PERMISSION_SESSION_KEY]
+        print('获取权限信息')
         print(permission_dict)
         
         # 权限的校验
