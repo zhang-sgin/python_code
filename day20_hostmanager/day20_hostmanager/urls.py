@@ -25,7 +25,7 @@ urlpatterns = [
     # url(r'^crm/',host.index,name='logout'),
 
     url(r'^hosts/', include('host_manager.urls')),
-    url(r'^bus/', include('host_manager.urls')),
+    url(r'^bus/', include('bus.urls')),
 
 ]
 

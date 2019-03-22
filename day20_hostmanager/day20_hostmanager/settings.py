@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'host_manager.apps.HostConfig',
+    'bus.apps.BusConfig',
     'rbac.apps.RbacConfig'
 ]
 
