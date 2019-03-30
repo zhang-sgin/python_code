@@ -41,12 +41,23 @@ class HostForm(forms.ModelForm):
     class Meta:
         model = models.Host
         fields = '__all__'  # []
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-control'})
+        }
+        required = {
+            'name': True
+        }
+        error_messages = {
+            'name': {'required': '主机名不可为空'},
+            'ip':{'required': 'IP不可为空'}
+        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         
         for field in self.fields.values():
             field.widget.attrs.update({'class': 'form-control'})
+
 
 
 def host_change(request, edit_id=None):
