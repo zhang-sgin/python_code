@@ -1,0 +1,43 @@
+{% extends name %}
+{% block hostm %}active{% endblock %}
+{% block main %}
+    <div class="col-lg-8 col-lg-offset-2" style="margin-top: 80px">
+        <form action="" method="post" class="form-horizontal" novalidate>
+            {% csrf_token %}
+
+            <div class="form-group  {% if form_obj.name.errors %}has-error{% endif %}">
+                <label for="{{ form_obj.name.id_for_label }}"
+                       class="col-sm-2 control-label">{{ form_obj.name.label }}</label>
+                <div class="col-sm-10">
+                    {{ form_obj.name }}
+                    <span style="color: red">{{ form_obj.name.errors.0 }}</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form_obj.desc.id_for_label }}"
+                       class="col-sm-2 control-label">{{ form_obj.desc.label }}</label>
+                <div class="col-sm-10">
+                    {{ form_obj.desc }}
+                    <span>{{ form_obj.desc.errors.0 }}</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form_obj.count.id_for_label }}"
+                       class="col-sm-2 control-label">{{ form_obj.count.label }}</label>
+                <div class="col-sm-10">
+                    {{ form_obj.count }}
+                    <span>{{ form_obj.count.errors.0 }}</span>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">保 存</button>
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

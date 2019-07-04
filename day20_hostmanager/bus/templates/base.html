@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-Type" charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>day18</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% get_static_prefix %}css/dsb.css">
+    <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.css' %} "/>
+
+
+    <link rel="shortcut icon" href="{% static 'imgs/luffy-study-logo.png' %} ">
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.css' %} "/>
+    <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.css' %} "/>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %} "/>
+    <script src="{% static 'plugins/sweetalert.js' %}"></script>
+    {% block css %}{% endblock %}
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .no-radius {
+            border-radius: 0;
+        }
+
+        .no-margin {
+            margin: 0;
+        }
+
+        .pg-body > .left-menu {
+            background-color: #EAEDF1;
+            position: absolute;
+            left: 1px;
+            top: 48px;
+            bottom: 0;
+            width: 220px;
+            border: 1px solid #EAEDF1;
+            overflow: auto;
+        }
+
+        .pg-body > .right-body {
+            position: absolute;
+            left: 225px;
+            right: 0;
+            top: 48px;
+            bottom: 0;
+            overflow: scroll;
+            border: 1px solid #ddd;
+            border-top: 0;
+            font-size: 13px;
+            min-width: 755px;
+        }
+
+        .navbar-right {
+            float: right !important;
+            margin-right: -15px;
+        }
+
+        .luffy-container {
+            padding: 15px;
+        }
+
+        .left-menu .menu-body .static-menu {
+
+        }
+
+        .left-menu .menu-body .static-menu .icon-wrap {
+            width: 20px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .left-menu .menu-body .static-menu a {
+            text-decoration: none;
+            padding: 8px 15px;
+            border-bottom: 1px solid #ccc;
+            color: #333;
+            display: block;
+            background: #efefef;
+            background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #efefef), color-stop(1, #fafafa));
+            background: -ms-linear-gradient(bottom, #efefef, #fafafa);
+            background: -o-linear-gradient(bottom, #efefef, #fafafa);
+            filter: progid:dximagetransform.microsoft.gradient(startColorStr='#e3e3e3', EndColorStr='#ffffff');
+            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa',EndColorStr='#efefef')";
+            box-shadow: inset 0 1px 1px white;
+        }
+
+        .left-menu .menu-body .static-menu a:hover {
+            color: #2F72AB;
+            border-left: 2px solid #2F72AB;
+        }
+
+        .left-menu .menu-body .static-menu a.active {
+            color: #2F72AB;
+            border-left: 2px solid #2F72AB;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">crm</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'logout' %}">退出登录</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="pg-body">
+    <div class="left-menu">
+        <div class="menu-body">
+            {% load rbac %}
+            {% menu request %}
+        </div>
+    </div>
+
+    {#    <div class="right-body">#}
+    {#        <div class="col-sm-3 col-md-2 sidebar">#}
+    {#            <ul class="nav nav-sidebar">#}
+    {#                <li><a href="{% url 'host_list' %}">{% breadcrumb request %} <span class="sr-only">(current)</span></a>#}
+    {#                </li>#}
+    {#            </ul>#}
+    {#            <div>#}
+    {#                {% block content %} {% endblock %}#}
+    {#            </div>#}
+    {#        </div>#}
+
+
+    {#    <div class="pg-body">#}
+    {#    <div class="left-menu">#}
+    {#        <div class="menu-body">#}
+    {#            {% load rbac %}#}
+    {#            {% menu request %}#}
+    {#        </div>#}
+    {#    </div>#}
+
+    <div class="right-body">
+        <div>
+            {% breadcrumb request %}
+        </div>
+        {% block content %} {% endblock %}
+    </div>
+</div>
+
+
+{#        <div>#}
+{#            {% breadcrumb request %}#}
+{#        </div>#}
+{#        {% block content %} {% endblock %}#}
+{#</div>#}
+
+
+<script src="{% static 'js/jquery-3.3.1.min.js' %} "></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %} "></script>
+<script src="{% static 'js/ajaxsetup.js' %}"></script>
+<script src="{% static 'js/sweetalert.js' %}"></script>
+<script src="{% static 'js/menu.js' %} "></script>
+
+{% block js %}{% endblock %}
+</body>
+</html>

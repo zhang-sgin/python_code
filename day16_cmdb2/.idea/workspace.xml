@@ -2,12 +2,241 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60789f68-52fb-4ca7-a4f6-bbf6fbbfa4a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/.idea/day18_crm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/migrations/0002_systemuser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/AdminLTE.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/bootstrap-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/bootstrap.min-3.3.6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/google-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/img/blue@2x.png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/img/xeon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/adminlte.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/bootstrap-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/html5shiv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/icheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/jquery-2.2.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-am_ET.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-am_ET.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ar_AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ar_AR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-bg_BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-bg_BG.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-cs_CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-cs_CZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-da_DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-da_DK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-de_DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-de_DE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-en_US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-en_US.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-es_CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-es_CL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-es_ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-es_ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-et_EE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-et_EE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-eu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fa_IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fa_IR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fi_FI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fi_FI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fr_FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fr_FR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-hr_HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-hr_HR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-hu_HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-hu_HU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-id_ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-id_ID.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-it_IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-it_IT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ja_JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ja_JP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-kh_KM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-kh_KM.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ko_KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ko_KR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-lt_LT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-lt_LT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-lv_LV.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-lv_LV.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-nb_NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-nb_NO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-nl_NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-nl_NL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pl_PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pl_PL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pt_BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pt_PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ro_RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ro_RO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ru_RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ru_RU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sk_SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sk_SK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sl_SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sl_SI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sv_SE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-tr_TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-tr_TR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ua_UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ua_UA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-vi_VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-vi_VN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-zh_CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-zh_TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/css/commons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/css/dsb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/css/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/luffy-study-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/luffy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/zhangz-l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/ajaxsetup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/imgs/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/imgs/name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/imgs/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/imgs/zhangz-l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/login2-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/particles.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/sweetalert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/depart_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/depart_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/depart_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/views/depart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/views/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/day18_crm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/day18_crm/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/day18_crm/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/day18_crm/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/templates/layout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day16_cmdb2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/day16_cmdb2/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/edit_user_service.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit_user_service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day18_crm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,29 +272,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/views.py">
+        <entry file="file://$PROJECT_DIR$/templates/list_user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-              <folding>
-                <element signature="e#479#847#0" />
-                <element signature="e#880#1399#0" />
-                <element signature="e#1443#1535#0" />
-                <element signature="e#1774#1805#0" />
-                <element signature="e#3200#3243#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-              <folding>
-                <element signature="e#26#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -73,38 +283,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day16_cmdb2/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="122" column="18" selection-start-line="122" selection-end-line="122" selection-end-column="18" />
+            <state relative-caret-position="1654">
+              <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Middleware/usermiddleware.py">
+        <entry file="file://$PROJECT_DIR$/user/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+            <state relative-caret-position="396">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding>
-                <element signature="e#0#52#0" expanded="true" />
+                <element signature="e#26#61#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/edit_user_service.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -112,12 +304,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+            <state relative-caret-position="450">
+              <caret line="50" selection-start-line="50" selection-end-line="55" selection-end-column="100" />
               <folding>
                 <element signature="e#739#775#0" />
                 <element signature="e#1594#1906#0" />
-                <element signature="e#1944#2179#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/add_user.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day16_cmdb2/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding>
+                <element signature="e#645#685#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,7 +384,6 @@
         <option value="$PROJECT_DIR$/host/views.py" />
         <option value="$PROJECT_DIR$/templates/edit_host.html" />
         <option value="$PROJECT_DIR$/user/urls.py" />
-        <option value="$PROJECT_DIR$/user/views.py" />
         <option value="$PROJECT_DIR$/day16_cmdb2/urls.py" />
         <option value="$PROJECT_DIR$/templates/add_service_user.html" />
         <option value="$PROJECT_DIR$/host/urls.py" />
@@ -191,14 +402,15 @@
         <option value="$PROJECT_DIR$/service/views.py" />
         <option value="$PROJECT_DIR$/Middleware/usermiddleware.py" />
         <option value="$PROJECT_DIR$/day16_cmdb2/settings.py" />
+        <option value="$PROJECT_DIR$/user/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="522" />
-    <option name="y" value="64" />
-    <option name="width" value="1280" />
-    <option name="height" value="950" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -219,11 +431,6 @@
               <item name="day16_cmdb2" type="b2602c69:ProjectViewProjectNode" />
               <item name="day16_cmdb2" type="462c0819:PsiDirectoryNode" />
               <item name="day16_cmdb2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="day16_cmdb2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day16_cmdb2" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -264,7 +471,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Django server.day16_cmdb2">
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="day16_cmdb2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -335,6 +542,8 @@
       <workItem from="1551056297374" duration="1543000" />
       <workItem from="1551171621878" duration="20690000" />
       <workItem from="1551280635242" duration="4298000" />
+      <workItem from="1552464460587" duration="3721000" />
+      <workItem from="1552552906913" duration="1686000" />
     </task>
     <task id="LOCAL-00001" summary="day17">
       <created>1551268360658</created>
@@ -361,14 +570,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79491000" />
+    <option name="totallyTimeSpent" value="85740000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="522" y="64" width="1280" height="950" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22704919" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15618336" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32719395" />
@@ -379,7 +588,7 @@
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.26682988" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.2654388" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -445,28 +654,7 @@
     <entry file="file://$PROJECT_DIR$/templates/publisher.html" />
     <entry file="das://6afadedf-905c-44ef-9e18-85038ecc22ea/schema/main/table/user_service" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/utils/datastructures.py" />
-    <entry file="file://$PROJECT_DIR$/templates/add_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cc3c5268-4c16-4a6b-aea8-1e24abd48178/console.sql" />
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="64" lean-forward="true" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/list_user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="24" column="72" lean-forward="true" selection-start-line="24" selection-start-column="72" selection-end-line="24" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../day17/day17.txt" />
     <entry file="file://$PROJECT_DIR$/host/models.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -482,34 +670,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/dsb.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/contrib/auth/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/user/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding>
-            <element signature="e#645#677#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day16_cmdb2/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="e#645#685#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/add_host.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -593,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/add_service_user.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="611">
@@ -618,13 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="272" column="86" selection-start-line="272" selection-start-column="86" selection-end-line="272" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -669,56 +816,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user/models.py">
+    <entry file="file://$PROJECT_DIR$/Middleware/usermiddleware.py" />
+    <entry file="file://$PROJECT_DIR$/user/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        <state relative-caret-position="396">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
           <folding>
-            <element signature="e#739#775#0" />
-            <element signature="e#1594#1906#0" />
-            <element signature="e#1944#2179#0" />
+            <element signature="e#645#677#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="144">
+          <caret line="14" column="98" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/dsb.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="63" column="34" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="64" lean-forward="true" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="50" selection-start-line="50" selection-end-line="55" selection-end-column="100" />
           <folding>
-            <element signature="e#479#847#0" />
-            <element signature="e#880#1399#0" />
-            <element signature="e#1443#1535#0" />
-            <element signature="e#1774#1805#0" />
-            <element signature="e#3200#3243#0" />
+            <element signature="e#739#775#0" />
+            <element signature="e#1594#1906#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day16_cmdb2/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#645#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/list_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="396">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
             <element signature="e#26#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Middleware/usermiddleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day16_cmdb2/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="122" column="18" selection-start-line="122" selection-end-line="122" selection-end-column="18" />
+        <state relative-caret-position="1654">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
         </state>
       </provider>
     </entry>

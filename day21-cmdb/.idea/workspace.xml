@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="31d31fb5-bedc-43b9-8970-e05f0c078baa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day16_cmdb2/Middleware/check-login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/AdminLTE.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/bootstrap-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/bootstrap.min-3.3.6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/google-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/css/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/img/blue@2x.png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/img/user2-160x160.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/img/xeon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/adminlte.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/bootstrap-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/html5shiv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/icheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/jquery-2.2.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-am_ET.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-am_ET.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ar_AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ar_AR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-bg_BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-bg_BG.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-cs_CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-cs_CZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-da_DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-da_DK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-de_DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-de_DE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-en_US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-en_US.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-es_CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-es_CL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-es_ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-es_ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-et_EE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-et_EE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-eu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fa_IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fa_IR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fi_FI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fi_FI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fr_FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-fr_FR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-hr_HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-hr_HR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-hu_HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-hu_HU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-id_ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-id_ID.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-it_IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-it_IT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ja_JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ja_JP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-kh_KM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-kh_KM.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ko_KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ko_KR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-lt_LT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-lt_LT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-lv_LV.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-lv_LV.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-nb_NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-nb_NO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-nl_NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-nl_NL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pl_PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pl_PL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pt_BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-pt_PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ro_RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ro_RO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ru_RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ru_RU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sk_SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sk_SK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sl_SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sl_SI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-sv_SE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-tr_TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-tr_TR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ua_UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-ua_UA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-vi_VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-vi_VN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-zh_CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/bootstrap/js/select-js/defaults-zh_TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/css/commons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/css/dsb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/css/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/luffy-study-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/luffy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/imgs/zhangz-l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/ajaxsetup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/imgs/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/imgs/name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/imgs/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/imgs/zhangz-l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/login2-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/particles.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/js/sweetalert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/static/plugins/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/depart_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/depart_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/depart_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/views/depart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/crm/views/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/day18_crm/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day18_crm/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/day20_hostmanager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/templates/bus_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/templates/host_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/templates/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/templatetags/my_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/bus/views/bus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/day20_hostmanager/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/day20_hostmanager/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/day20_hostmanager/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/day20_hostmanager/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/migrations/0003_user_roles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/migrations/0004_auto_20190321_1409.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/migrations/0005_auto_20190321_1503.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/bootstrap-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/bootstrap.min-3.3.6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/google-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/css/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/js/adminlte.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/js/bootstrap-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/js/html5shiv.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/js/icheck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/js/jquery-2.2.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/bootstrap/js/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/css/commons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/css/dsb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/css/nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/imgs/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/imgs/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/imgs/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/imgs/luffy-study-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/imgs/name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/imgs/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/js/ajaxsetup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/js/imgs/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/js/imgs/name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/js/imgs/password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/js/login2-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/js/particles.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/js/sweetalert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/static/plugins/sweetalert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/bus_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/host_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templates/nav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/templatetags/my_tags.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/views/bus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/views/host.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/middlewares/rbac.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/service/permission.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/static/css/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/static/js/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/templates/breadcrumb.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/templates/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/templatetags/rbac.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/rbac/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/utils/pagination.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day20_hostmanager/utils/reverse_url.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/day21-cmdb.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/bin/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/conf/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/files/board.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/files/cpuinfo.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/files/disk.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/files/memory.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/files/nic.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/engine/agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/engine/aliyun.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/engine/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/engine/salt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/engine/ssh.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/engine/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/plugins/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/plugins/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/plugins/disk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/plugins/memory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/plugins/nic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/脚本/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/脚本/代码的拆分.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/脚本/类的约束.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/脚本/线程池.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/脚本/错误处理.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/api/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day24-爬虫/练习.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day05-面向对象/day05-练习.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day05-面向对象/day05-练习.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/dataSources/8e3a04ca-587c-4f6a-b587-f0f7d7eda08b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/dataSources/799cfdb3-b578-468f-8183-7502c1d8e11c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/dataSources/8e3a04ca-587c-4f6a-b587-f0f7d7eda08b/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/.idea/dataSources/799cfdb3-b578-468f-8183-7502c1d8e11c/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/day15_django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/.idea/day18_crm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/crm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/crm/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/crm/migrations/0002_systemuser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/migrations/0002_publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/crm/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/migrations/0003_auto_20190213_1536.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day20_hostmanager/host_manager/migrations/0002_remove_user_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/migrations/0004_auto_20190213_1559.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/crm/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/crm/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/app01/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/day15_django/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/day18_crm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/day15_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/day18_crm/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/day15_django/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/day15_django/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/day18_crm/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/static.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/templates/add_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/templates/edit_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/templates/list_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../day18_crm/crm/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/templates/login2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day15_django/templates/starter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day16_cmdb2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day16_cmdb2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day16_cmdb2/Middleware/usermiddleware.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day16_cmdb2/day16_cmdb2/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day16_cmdb2/day16_cmdb2/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day16_cmdb2/day16_cmdb2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day16_cmdb2/day16_cmdb2/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day16_cmdb2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../day16_cmdb2/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day16_cmdb2/host/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day16_cmdb2/host/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day16_cmdb2/service/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day16_cmdb2/service/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day16_cmdb2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day16_cmdb2/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day16_cmdb2/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day16_cmdb2/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="day21-cmdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day21-cmdb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day21-cmdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day21-cmdb" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day21-cmdb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day21-cmdb" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31d31fb5-bedc-43b9-8970-e05f0c078baa" name="Default Changelist" comment="" />
+      <created>1561374461808</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561374461808</updated>
+      <workItem from="1561374463446" duration="12000" />
+      <workItem from="1562138673052" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
